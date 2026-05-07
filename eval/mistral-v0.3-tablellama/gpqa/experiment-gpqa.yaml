@@ -1,0 +1,18 @@
+### model
+model_name_or_path: /code/table-sft/saves/mistral-finetune/experiment-12004-mistral-lr-5.0e-7-tablellama_train/checkpoint-18060
+
+### method
+finetuning_type: full
+
+### dataset
+task_dir: /code/LLaMA-Factory/evaluation/
+task: gpqa_test  
+template: fewshot
+lang: en
+n_shot: 0
+
+### output
+save_dir: /code/table-sft/saves/mistral-finetune/experiment-12004-mistral-lr-5.0e-7-tablellama_train/checkpoint-18060/evaluations/gpqa
+
+### eval
+batch_size: 4

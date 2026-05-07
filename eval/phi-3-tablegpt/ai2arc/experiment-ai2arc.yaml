@@ -1,0 +1,18 @@
+### model
+model_name_or_path: /code/table-sft/saves/phi-finetune/experiment-12000-phi-lr-5.0e-7-tablegpt_large_train/checkpoint-11178
+
+### method
+finetuning_type: full
+
+### dataset
+task_dir: /code/LLaMA-Factory/evaluation/
+task: ai2arc_test  
+template: fewshot
+lang: ai2arc
+n_shot: 0
+
+### output
+save_dir: /code/table-sft/saves/phi-finetune/experiment-12000-phi-lr-5.0e-7-tablegpt_large_train/checkpoint-11178/evaluations/ai2arc
+
+### eval
+batch_size: 2
