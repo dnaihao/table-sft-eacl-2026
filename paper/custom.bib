@@ -16,34 +16,6 @@
   organization={IEEE}
 }
 
-@book{Aho:72,
-    author  = {Alfred V. Aho and Jeffrey D. Ullman},
-    title   = {The Theory of Parsing, Translation and Compiling},
-    year    = "1972",
-    volume  = "1",
-    publisher = {Prentice-Hall},
-    address = {Englewood Cliffs, NJ}
-}
-
-@inproceedings{akhtar-etal-2022-pubhealthtab,
-    title = "{P}ub{H}ealth{T}ab: {A} Public Health Table-based Dataset for Evidence-based Fact Checking",
-    author = "Akhtar, Mubashara  and
-      Cocarascu, Oana  and
-      Simperl, Elena",
-    editor = "Carpuat, Marine  and
-      de Marneffe, Marie-Catherine  and
-      Meza Ruiz, Ivan Vladimir",
-    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2022",
-    month = jul,
-    year = "2022",
-    address = "Seattle, United States",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.findings-naacl.1/",
-    doi = "10.18653/v1/2022.findings-naacl.1",
-    pages = "1--16",
-    abstract = "Inspired by human fact checkers, who use different types of evidence (e.g. tables, images, audio) in addition to text, several datasets with tabular evidence data have been released in recent years. Whilst the datasets encourage research on table fact-checking, they rely on information from restricted data sources, such as Wikipedia for creating claims and extracting evidence data, making the fact-checking process different from the real-world process used by fact checkers. In this paper, we introduce PubHealthTab, a table fact-checking dataset based on real world public health claims and noisy evidence tables from sources similar to those used by real fact checkers. We outline our approach for collecting evidence data from various websites and present an in-depth analysis of our dataset. Finally, we evaluate state-of-the-art table representation and pre-trained models fine-tuned on our dataset, achieving an overall $F_1$ score of 0.73."
-}
-
 @inproceedings{aly-etal-2021-fact,
     title = "The Fact Extraction and {VER}ification Over Unstructured and Structured information ({FEVEROUS}) Shared Task",
     author = "Aly, Rami  and
@@ -73,46 +45,6 @@
     abstract = "The Fact Extraction and VERification Over Unstructured and Structured information (FEVEROUS) shared task, asks participating systems to determine whether human-authored claims are Supported or Refuted based on evidence retrieved from Wikipedia (or NotEnoughInfo if the claim cannot be verified). Compared to the FEVER 2018 shared task, the main challenge is the addition of structured data (tables and lists) as a source of evidence. The claims in the FEVEROUS dataset can be verified using only structured evidence, only unstructured evidence, or a mixture of both. Submissions are evaluated using the FEVEROUS score that combines label accuracy and evidence retrieval. Unlike FEVER 2018, FEVEROUS requires partial evidence to be returned for NotEnoughInfo claims, and the claims are longer and thus more complex. The shared task received 13 entries, six of which were able to beat the baseline system. The winning team was {``}Bust a move!{''}, achieving a FEVEROUS score of 27{\%} (+9{\%} compared to the baseline). In this paper we describe the shared task, present the full results and highlight commonalities and innovations among the participating systems.",
 }
 
-@article{Ando2005,
-	Acmid = {1194905},
-	Author = {Ando, Rie Kubota and Zhang, Tong},
-	Issn = {1532-4435},
-	Issue_Date = {12/1/2005},
-	Journal = {Journal of Machine Learning Research},
-	Month = dec,
-	Numpages = {37},
-	Pages = {1817--1853},
-	Publisher = {JMLR.org},
-	Title = {A Framework for Learning Predictive Structures from Multiple Tasks and Unlabeled Data},
-	Volume = {6},
-	Year = {2005}
-}
-
-@inproceedings{andrew2007scalable,
-  title={Scalable training of {L1}-regularized log-linear models},
-  author={Andrew, Galen and Gao, Jianfeng},
-  booktitle={Proceedings of the 24th International Conference on Machine Learning},
-  pages={33--40},
-  year={2007},
-}
-
-@book{APA:83,
-    author  = {{American Psychological Association}},
-    title   = {Publications Manual},
-    year    = "1983",
-    publisher = {American Psychological Association},
-    address = {Washington, DC}
-}
-
-@article{brown2020language,
-  title={Language models are few-shot learners},
-  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
-  journal={Advances in neural information processing systems},
-  volume={33},
-  pages={1877--1901},
-  year={2020}
-}
-
 @article{cafarella2008webtables,
   title={Webtables: exploring the power of tables on the web},
   author={Cafarella, Michael J and Halevy, Alon and Wang, Daisy Zhe and Wu, Eugene and Zhang, Yang},
@@ -122,17 +54,6 @@
   pages={538--549},
   year={2008},
   publisher={VLDB Endowment}
-}
-
-@article{Chandra:81,
-	author = {Ashok K. Chandra and Dexter C. Kozen and Larry J. Stockmeyer},
-	year = "1981",
-	title = {Alternation},
-	journal = {Journal of the Association for Computing Machinery},
-	volume = "28",
-	number = "1",
-	pages = "114--133",
-	doi = "10.1145/322234.322243",
 }
 
 @article{chang2023prompt,
@@ -259,51 +180,11 @@ url={https://openreview.net/forum?id=MmCRswl1UYl}
     abstract = "Tables are often created with hierarchies, but existing works on table reasoning mainly focus on flat tables and neglect hierarchical tables. Hierarchical tables challenge numerical reasoning by complex hierarchical indexing, as well as implicit relationships of calculation and semantics. We present a new dataset, HiTab, to study question answering (QA) and natural language generation (NLG) over hierarchical tables. HiTab is a cross-domain dataset constructed from a wealth of statistical reports and Wikipedia pages, and has unique characteristics: (1) nearly all tables are hierarchical, and (2) QA pairs are not proposed by annotators from scratch, but are revised from real and meaningful sentences authored by analysts. (3) to reveal complex numerical reasoning in statistical reports, we provide fine-grained annotations of quantity and entity alignment. Experiments suggest that this HiTab presents a strong challenge for existing baselines and a valuable benchmark for future research. Targeting hierarchical structure, we devise a hierarchy-aware logical form for symbolic reasoning over tables, which shows high effectiveness. Targeting table reasoning, we leverage entity and quantity alignment to explore partially supervised training in QA and conditional generation in NLG, and largely reduce spurious predictions in QA and produce better descriptions in NLG.",
 }
 
-@article{chung2024scaling,
-  title={Scaling instruction-finetuned language models},
-  author={Chung, Hyung Won and Hou, Le and Longpre, Shayne and Zoph, Barret and Tay, Yi and Fedus, William and Li, Yunxuan and Wang, Xuezhi and Dehghani, Mostafa and Brahma, Siddhartha and others},
-  journal={Journal of Machine Learning Research},
-  volume={25},
-  number={70},
-  pages={1--53},
-  year={2024}
-}
-
 @article{clark2018think,
   title={Think you have solved question answering? try arc, the ai2 reasoning challenge},
   author={Clark, Peter and Cowhey, Isaac and Etzioni, Oren and Khot, Tushar and Sabharwal, Ashish and Schoenick, Carissa and Tafjord, Oyvind},
   journal={arXiv preprint arXiv:1803.05457},
   year={2018}
-}
-
-@article{cobbe2021training,
-  title={Training verifiers to solve math word problems},
-  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and others},
-  journal={arXiv preprint arXiv:2110.14168},
-  year={2021}
-}
-
-@inproceedings{dahl-etal-1994-expanding,
-    title = "Expanding the Scope of the {ATIS} Task: The {ATIS}-3 Corpus",
-    author = "Dahl, Deborah A.  and
-      Bates, Madeleine  and
-      Brown, Michael  and
-      Fisher, William  and
-      Hunicke-Smith, Kate  and
-      Pallett, David  and
-      Pao, Christine  and
-      Rudnicky, Alexander  and
-      Shriberg, Elizabeth",
-    booktitle = "{H}uman {L}anguage {T}echnology: Proceedings of a Workshop held at {P}lainsboro, {N}ew {J}ersey, {M}arch 8-11, 1994",
-    year = "1994",
-    url = "https://aclanthology.org/H94-1010",
-}
-
-@inproceedings{dahl1994expanding,
-  title={Expanding the scope of the ATIS task: The ATIS-3 corpus},
-  author={Dahl, Deborah A and Bates, Madeleine and Brown, Michael K and Fisher, William M and Hunicke-Smith, Kate and Pallett, David S and Pao, Christine and Rudnicky, Alexander and Shriberg, Elizabeth},
-  booktitle={Human Language Technology: Proceedings of a Workshop held at Plainsboro, New Jersey, March 8-11, 1994},
-  year={1994}
 }
 
 @inproceedings{deng-etal-2022-recent,
@@ -404,13 +285,6 @@ url={https://openreview.net/forum?id=GLmqHCwbOJ}
     abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
 }
 
-@article{dong2022table,
-  title={Table pre-training: A survey on model architectures, pre-training objectives, and downstream tasks},
-  author={Dong, Haoyu and Cheng, Zhoujun and He, Xinyi and Zhou, Mengyu and Zhou, Anda and Zhou, Fan and Liu, Ao and Han, Shi and Zhang, Dongmei},
-  journal={arXiv preprint arXiv:2201.09745},
-  year={2022}
-}
-
 @article{dubey2024llama,
   title={The llama 3 herd of models},
   author={Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelten, Alan and Yang, Amy and Fan, Angela and others},
@@ -467,14 +341,6 @@ url={https://openreview.net/forum?id=GLmqHCwbOJ}
     abstract = "In this paper, we observe that semi-structured tabulated text is ubiquitous; understanding them requires not only comprehending the meaning of text fragments, but also implicit relationships between them. We argue that such data can prove as a testing ground for understanding how we reason about information. To study this, we introduce a new dataset called INFOTABS, comprising of human-written textual hypotheses based on premises that are tables extracted from Wikipedia info-boxes. Our analysis shows that the semi-structured, multi-domain and heterogeneous nature of the premises admits complex, multi-faceted reasoning. Experiments reveal that, while human annotators agree on the relationships between a table-hypothesis pair, several standard modeling strategies are unsuccessful at the task, suggesting that reasoning about tables can pose a difficult modeling challenge.",
 }
 
-@book{Gusfield:97,
-    author  = {Dan Gusfield},
-    title   = {Algorithms on Strings, Trees and Sequences},
-    year    = "1997",
-    publisher = {Cambridge University Press},
-    address = {Cambridge, UK}
-}
-
 @book{hawkins2021thousand,
   title={A thousand brains: a new theory of intelligence},
   author={Hawkins, Jeff},
@@ -491,13 +357,6 @@ url={https://openreview.net/forum?id=GLmqHCwbOJ}
   pages={1358--1369},
   year={2015},
   publisher={VLDB Endowment}
-}
-
-@inproceedings{hemphill1990atis,
-  title={The ATIS spoken language systems pilot corpus},
-  author={Hemphill, Charles T and Godfrey, John J and Doddington, George R},
-  booktitle={Speech and Natural Language: Proceedings of a Workshop Held at Hidden Valley, Pennsylvania, June 24-27, 1990},
-  year={1990}
 }
 
 @article{hendrycks2020measuring,
@@ -534,20 +393,6 @@ url={https://openreview.net/forum?id=GLmqHCwbOJ}
     doi = "10.18653/v1/2020.acl-main.398",
     pages = "4320--4333",
     abstract = "Answering natural language questions over tables is usually seen as a semantic parsing task. To alleviate the collection cost of full logical forms, one popular approach focuses on weak supervision consisting of denotations instead of logical forms. However, training semantic parsers from weak supervision poses difficulties, and in addition, the generated logical forms are only used as an intermediate step prior to retrieving the denotation. In this paper, we present TaPas, an approach to question answering over tables without generating logical forms. TaPas trains from weak supervision, and predicts the denotation by selecting table cells and optionally applying a corresponding aggregation operator to such selection. TaPas extends BERT{'}s architecture to encode tables as input, initializes from an effective joint pre-training of text segments and tables crawled from Wikipedia, and is trained end-to-end. We experiment with three different semantic parsing datasets, and find that TaPas outperforms or rivals semantic parsing models by improving state-of-the-art accuracy on SQA from 55.1 to 67.2 and performing on par with the state-of-the-art on WikiSQL and WikiTQ, but with a simpler model architecture. We additionally find that transfer learning, which is trivial in our setting, from WikiSQL to WikiTQ, yields 48.7 accuracy, 4.2 points above the state-of-the-art.",
-}
-
-@article{hewitt2024instruction,
-  title={Instruction Following without Instruction Tuning},
-  author={Hewitt, John and Liu, Nelson F and Liang, Percy and Manning, Christopher D},
-  journal={arXiv preprint arXiv:2409.14254},
-  year={2024}
-}
-
-@article{hu2021lora,
-  title={Lora: Low-rank adaptation of large language models},
-  author={Hu, Edward J and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
-  journal={arXiv preprint arXiv:2106.09685},
-  year={2021}
 }
 
 @article{hu2023llm,
@@ -826,26 +671,6 @@ url={https://openreview.net/forum?id=ry2YOrcge}
   year={2003}
 }
 
-@article{radford2019language,
-  title={Language models are unsupervised multitask learners},
-  author={Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
-  journal={OpenAI blog},
-  volume={1},
-  number={8},
-  pages={9},
-  year={2019}
-}
-
-@article{rasooli-tetrault-2015,
-    author    = {Mohammad Sadegh Rasooli and Joel R. Tetreault},
-    title     = {Yara Parser: {A} Fast and Accurate Dependency Parser},
-    journal   = {Computing Research Repository},
-    volume    = {arXiv:1503.06733},
-    year      = {2015},
-    url       = {http://arxiv.org/abs/1503.06733},
-    note    = {version 2}
-}
-
 @article{rein2023gpqa,
   title={Gpqa: A graduate-level google-proof q\&a benchmark},
   author={Rein, David and Hou, Betty Li and Stickland, Asa Cooper and Petty, Jackson and Pang, Richard Yuanzhe and Dirani, Julien and Michael, Julian and Bowman, Samuel R},
@@ -1047,29 +872,6 @@ url={https://openreview.net/forum?id=ry2YOrcge}
     abstract = "When translating natural language questions into SQL queries to answer questions from a database, contemporary semantic parsing models struggle to generalize to unseen database schemas. The generalization challenge lies in (a) encoding the database relations in an accessible way for the semantic parser, and (b) modeling alignment between database columns and their mentions in a given query. We present a unified framework, based on the relation-aware self-attention mechanism, to address schema encoding, schema linking, and feature representation within a text-to-SQL encoder. On the challenging Spider dataset this framework boosts the exact match accuracy to 57.2{\%}, surpassing its best counterparts by 8.7{\%} absolute improvement. Further augmented with BERT, it achieves the new state-of-the-art performance of 65.6{\%} on the Spider leaderboard. In addition, we observe qualitative improvements in the model`s understanding of schema linking and alignment. Our implementation will be open-sourced at \url{https://github.com/Microsoft/rat-sql}."
 }
 
-@inproceedings{wang-etal-2023-self-instruct,
-    title = "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
-    author = "Wang, Yizhong  and
-      Kordi, Yeganeh  and
-      Mishra, Swaroop  and
-      Liu, Alisa  and
-      Smith, Noah A.  and
-      Khashabi, Daniel  and
-      Hajishirzi, Hannaneh",
-    editor = "Rogers, Anna  and
-      Boyd-Graber, Jordan  and
-      Okazaki, Naoaki",
-    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    month = jul,
-    year = "2023",
-    address = "Toronto, Canada",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.acl-long.754",
-    doi = "10.18653/v1/2023.acl-long.754",
-    pages = "13484--13508",
-    abstract = "Large {``}instruction-tuned{''} language models (i.e., finetuned to respond to instructions) have demonstrated a remarkable ability to generalize zero-shot to new tasks. Nevertheless, they depend heavily on human-written instruction data that is often limited in quantity, diversity, and creativity, therefore hindering the generality of the tuned model. We introduce Self-Instruct, a framework for improving the instruction-following capabilities of pretrained language models by bootstrapping off their own generations. Our pipeline generates instructions, input, and output samples from a language model, then filters invalid or similar ones before using them to finetune the original model. Applying our method to the vanilla GPT3, we demonstrate a 33{\%} absolute improvement over the original model on Super-NaturalInstructions, on par with the performance of InstructGPT-001, which was trained with private user data and human annotations. For further evaluation, we curate a set of expert-written instructions for novel tasks, and show through human evaluation that tuning GPT3 with Self-Instruct outperforms using existing public instruction datasets by a large margin, leaving only a 5{\%} absolute gap behind InstructGPT-001. Self-Instruct provides an almost annotation-free method for aligning pre-trained language models with instructions, and we release our large synthetic dataset to facilitate future studies on instruction tuning.",
-}
-
 @article{wang2023far,
   title={How far can camels go? exploring the state of instruction tuning on open resources},
   author={Wang, Yizhong and Ivison, Hamish and Dasigi, Pradeep and Hessel, Jack and Khot, Tushar and Chandu, Khyathi and Wadden, David and MacMillan, Kelsey and Smith, Noah A and Beltagy, Iz and others},
@@ -1107,15 +909,6 @@ url={https://openreview.net/forum?id=4L0xnS4GQM}
     year = "1982",
     url = "https://aclanthology.org/J82-3002/",
     pages = "110--122"
-}
-
-@article{wei2022chain,
-  title={Chain-of-thought prompting elicits reasoning in large language models},
-  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
-  journal={Advances in neural information processing systems},
-  volume={35},
-  pages={24824--24837},
-  year={2022}
 }
 
 @article{wei2022emergent,
@@ -1422,15 +1215,6 @@ url={https://openreview.net/forum?id=kyaIeYj4zZ}
     doi = "10.18653/v1/2024.naacl-long.335",
     pages = "6024--6044",
     abstract = "Semi-structured tables are ubiquitous. There has been a variety of tasks that aim to automatically interpret, augment, and query tables. Current methods often require pretraining on tables or special model architecture design, are restricted to specific table types, or have simplifying assumptions about tables and tasks. This paper makes the first step towards developing open-source large language models (LLMs) as generalists for a diversity of table-based tasks. Towards that end, we construct TableInstruct, a new dataset with a variety of realistic tables and tasks, for instruction tuning and evaluating LLMs. We further develop the first open-source generalist model for tables, TableLlama, by fine-tuning Llama 2 (7B) with LongLoRA to address the long context challenge. We experiment under both in-domain setting and out-of-domain setting. On 7 out of 8 in-domain tasks, TableLlama achieves comparable or better performance than the SOTA for each task, despite the latter often has task-specific design. On 6 out-of-domain datasets, it achieves 5-44 absolute point gains compared with the base model, showing that training on TableInstruct enhances the model{'}s generalizability. We open-source our dataset and trained model to boost future work on developing open generalist models for tables.",
-}
-
-@inproceedings{
-zhang2017understanding,
-title={Understanding deep learning requires rethinking generalization},
-author={Chiyuan Zhang and Samy Bengio and Moritz Hardt and Benjamin Recht and Oriol Vinyals},
-booktitle={International Conference on Learning Representations},
-year={2017},
-url={https://openreview.net/forum?id=Sy8gdB9xx}
 }
 
 @article{zhang2024tablellm,
