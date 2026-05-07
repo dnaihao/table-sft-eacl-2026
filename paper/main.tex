@@ -2291,6 +2291,22 @@ $\Delta$ & $\downarrow$ 0.5 & $\downarrow$ 1.2 & $\downarrow$ 0.3 & $\uparrow$ 1
 % For GPQA, as the task itself is challenging, both the 4B and 7B models cannot answer most of them, leading to a comparable performance.
 
 
+\subsection{Additional Released Model Variants}
+\label{app-subsec: additional-released-variants}
+
+Beyond the three 7B base models (Mistral-v0.3, OLMo, and Phi-3-small) that constitute the main 3$\times$4 grid analysed in this paper, we also instruction-tuned three additional base-model families on the same four training corpora (TableLlama, TableLLM, TableBenchLLM, and TableGPT) and release the resulting checkpoints as companion artefacts:
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.2em, topsep=0.4em]
+    \item \textbf{Phi-3-mini (4B)}: a smaller variant of the Phi-3 family. Performance comparisons against Phi-3-small (7B) are reported in \Cref{app-subsec: model-size}.
+    \item \textbf{Qwen2.5-7B-Instruct}~\citep{yang2024qwen2}: the instruction-tuned 7B Qwen2.5 model, released after the Mistral / OLMo / Phi-3 generation we focus on in the paper.
+    \item \textbf{Qwen3-8B}~\citep{yang2024qwen2}: the 8B Qwen3 model, the most recent open-weights Qwen release at the time of writing.
+\end{itemize}
+
+We follow the same training recipe as for the main 12 models (full SFT via LLaMA-Factory, learning rate $5\times 10^{-7}$, identical instruction templates and data preprocessing). All checkpoints are released under their respective base-model licenses (Apache-2.0 for Mistral / OLMo / Qwen2.5 / Qwen3, MIT for Phi-3 and Phi-3-mini); see the project repository at \url{https://github.com/dnaihao/table-sft-eacl-2026} for the full mapping from each variant to the corresponding HuggingFace model repository.
+
+These additional variants are released to broaden the pool of openly-available table-instruction-tuned models for the community and to enable follow-up studies that further factor base-model effects beyond the trio we analyse in detail.
+
+
 \section{Dataset Examples}
 \label{app-sec: dataset-examples}
 
