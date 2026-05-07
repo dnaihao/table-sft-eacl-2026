@@ -120,17 +120,6 @@
 \usepackage{accents}
 
 
-% self-defined command
-\newcommand{\dnaihao}[1]{\textcolor{blue}{[naihao: #1]}}
-\newcommand{\zshe}[1]{\textcolor{red}{[sheng: #1]}}
-\newcommand{\shuaichen}[1]{\textcolor{orange}{[shuaichen: #1]}}
-\newcommand{\patricng}[1]{\textcolor{teal}{[PN: #1]}}
-\newcommand{\yiqun}[1]{\textcolor{violet}{[yiqun: #1]}}
-% comment to remove comment
-%\renewcommand{\zshe}[1]{}
-%\renewcommand{\dnaihao}[1]{}
-%\renewcommand{\shuaichen}[1]{}
-%\renewcommand{\patricng}[1]{}
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 \newcommand{\modelname}[0]{\textbf{\textit{TableMistral}}}
@@ -411,12 +400,6 @@ Such diversified options make it hard to gauge the contributions of base models 
 
 \noindent\textit{\textbf{RQ2.}} How much does the training data influence the instruction-tuned models' capability on handling table tasks?
 
-% \dnaihao{Better models in general;
-% However, now we are faced with many choices in terms of the model selection, data selection, etc.}
-% \dnaihao{Moreover, there is no systematic comparison in the existing works.}
-% \dnaihao{Three key questions: 1) Would there be a difference when we choose different base models? If so, how large would the difference be?;
-% 2) What is the best training data that can make the model generalize well?}
-
 
 \paragraph{Generalization.}
 % Researchers have explored the issues of generalization for decades \citep{warren-pereira-1982-efficient, zhong2018seqsql, yu-etal-2018-spider, suhr-etal-2020-exploring}.
@@ -601,7 +584,6 @@ This suggests that while instruction tuning can meaningfully improve a model’s
 %     \label{fig:linear-plot-tablellm}
 % \end{figure}
 
-% \dnaihao{Highlight one set of training data may have different performance with different base model.}
 
 \begin{figure}[t]
     \centering
@@ -916,7 +898,6 @@ We provide discussions on the future directions for table modeling in \Cref{app-
 % Our fine-tuned Mistral model, though outperforming the original TableLlama on the TabFact dataset (86.8 versus 82.5), underperforms the untuned Mistral model on InfoTabs (27.7 versus 42.8).
 % \textit{Such results highlight the limitations of the SOTA-chasing works} as these models do not generalize to datasets within the same task category.
 % We invite future efforts in 
-% \dnaihao{To enhance generalization, future work could explore multi-task training strategies, curriculum learning, or synthetic data augmentation. Given our findings, incorporating explicit reasoning traces during training might particularly benefit generalization.}
 
 % When fine-tuned on the Mistral model, TableGPT's training data, while slightly underperforming the base model, exhibits the least performance decay.
 % In addition, in \Cref{tab: out-of-domain-complete}, fine-tuning on TableGPT's training data achieves the best out-of-domain table fact verification performance for both the OLMo and Phi models.
@@ -1132,9 +1113,7 @@ In addition, we evaluate these models on eight synthesized datasets including \t
 % \end{table}
 
 \Cref{tab: tablellm-comparison} outlines the base models used in existing table LLMs. 
-% \shuaichen{This paragraph is too short. can we merge it with the next paragraph}
 % which are fine-tuned from \textit{different foundational models using different datasets.} 
-% \shuaichen{trained -$>$ finetuned/adapted?}
 These base models, ranging from various Llama models to closed-source models such as GPT-3.5, differ significantly in their architecture designs, model sizes, and training recipes.
 In addition, each table LLM introduces its own unique training data, making it challenging to disentangle the impact of the training data from that of the base model.
 Here we report the performance of our fine-tuned models based on Mistral v0.3 7B Instruct, OLMo 7B Instruct, and Phi 3 Small Instruct (7B) versus the original models on the datasets reported in each of the original works.
@@ -1195,7 +1174,6 @@ In addition, we compare our fine-tuned models versus the original TableLlama on 
 Our fine-tuned models yield similar or better performance than the original TableLlama model in most cases.
 In addition, we achieve the new SOTA performance on HiTab by fine-tuning the Mistral model.
 As we only use 107K (5\% of the 2M data points used by the original TableLlama), our results demonstrate that \textit{with proper instruction-tuning, we can achieve competitive results on table tasks with much fewer data.}
-% \zshe{Do we need to add the current SOTA in Table 2? It may be confusing that LongLoRA 7B is the SOTA. }
 
 \subsection{Replicating TableLLM}
 
@@ -1506,8 +1484,6 @@ This echoes with the findings by \citet{zhou2024lima,deng2025rethinking} that li
 % The number is in gray if the ``train data'' includes the training set for the corresponding dataset.
 % ``$\crown$'' indicates the training data that leads to the most number of top performance for these table datasets.
 % Under ``Train Data'', names refer to the datasets used in \Cref{app-sec: reimpl-compare} for fine-tuning (e.g. TableLlama refers to the training data in \Cref{subsec: reimpl-tablellama}).
-% % \zshe{why there are two crowns?}
-% % \dnaihao{TableLLM same source does not lead to advantage.}
 % }
 % \label{tab: out-of-domain-mistral}
 % \end{table*}
@@ -1647,7 +1623,6 @@ This suggests that the base model selection is a crucial, and in many cases, a d
 % There is a strong linear correlation, given the Pearson r scores.
 
 
-% \dnaihao{Maybe another plot here to show the correlations?}
 % In addition, we observe that \textit{a model's performance on general benchmarks can serve as a good indicator to show its capability in table tasks}.
 % In \Cref{fig:general-benchmark-performance-difference}, the original Phi model outperforms both the Mistral and OLMo model on four out of five general benchmarks, which aligns with its superior performance on most table tasks after fine-tuning.
 
