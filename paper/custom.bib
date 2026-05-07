@@ -1,5 +1,21 @@
 % Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
 
+@article{abdin2024phi,
+  title={Phi-3 technical report: A highly capable language model locally on your phone},
+  author={Abdin, Marah and Aneja, Jyoti and Awadalla, Hany and Awadallah, Ahmed and Awan, Ammar Ahmad and Bach, Nguyen and Bahree, Amit and Bakhtiari, Arash and Bao, Jianmin and Behl, Harkirat and others},
+  journal={arXiv preprint arXiv:2404.14219},
+  year={2024}
+}
+
+@inproceedings{abedjan2016dataxformer,
+  title={Dataxformer: A robust transformation discovery system},
+  author={Abedjan, Ziawasch and Morcos, John and Ilyas, Ihab F and Ouzzani, Mourad and Papotti, Paolo and Stonebraker, Michael},
+  booktitle={2016 IEEE 32nd International Conference on Data Engineering (ICDE)},
+  pages={1134--1145},
+  year={2016},
+  organization={IEEE}
+}
+
 @book{Aho:72,
     author  = {Alfred V. Aho and Jeffrey D. Ullman},
     title   = {The Theory of Parsing, Translation and Compiling},
@@ -9,49 +25,52 @@
     address = {Englewood Cliffs, NJ}
 }
 
-@book{APA:83,
-    author  = {{American Psychological Association}},
-    title   = {Publications Manual},
-    year    = "1983",
-    publisher = {American Psychological Association},
-    address = {Washington, DC}
+@inproceedings{akhtar-etal-2022-pubhealthtab,
+    title = "{P}ub{H}ealth{T}ab: {A} Public Health Table-based Dataset for Evidence-based Fact Checking",
+    author = "Akhtar, Mubashara  and
+      Cocarascu, Oana  and
+      Simperl, Elena",
+    editor = "Carpuat, Marine  and
+      de Marneffe, Marie-Catherine  and
+      Meza Ruiz, Ivan Vladimir",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2022",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-naacl.1/",
+    doi = "10.18653/v1/2022.findings-naacl.1",
+    pages = "1--16",
+    abstract = "Inspired by human fact checkers, who use different types of evidence (e.g. tables, images, audio) in addition to text, several datasets with tabular evidence data have been released in recent years. Whilst the datasets encourage research on table fact-checking, they rely on information from restricted data sources, such as Wikipedia for creating claims and extracting evidence data, making the fact-checking process different from the real-world process used by fact checkers. In this paper, we introduce PubHealthTab, a table fact-checking dataset based on real world public health claims and noisy evidence tables from sources similar to those used by real fact checkers. We outline our approach for collecting evidence data from various websites and present an in-depth analysis of our dataset. Finally, we evaluate state-of-the-art table representation and pre-trained models fine-tuned on our dataset, achieving an overall $F_1$ score of 0.73."
 }
 
-@article{Chandra:81,
-	author = {Ashok K. Chandra and Dexter C. Kozen and Larry J. Stockmeyer},
-	year = "1981",
-	title = {Alternation},
-	journal = {Journal of the Association for Computing Machinery},
-	volume = "28",
-	number = "1",
-	pages = "114--133",
-	doi = "10.1145/322234.322243",
-}
-
-@inproceedings{andrew2007scalable,
-  title={Scalable training of {L1}-regularized log-linear models},
-  author={Andrew, Galen and Gao, Jianfeng},
-  booktitle={Proceedings of the 24th International Conference on Machine Learning},
-  pages={33--40},
-  year={2007},
-}
-
-@book{Gusfield:97,
-    author  = {Dan Gusfield},
-    title   = {Algorithms on Strings, Trees and Sequences},
-    year    = "1997",
-    publisher = {Cambridge University Press},
-    address = {Cambridge, UK}
-}
-
-@article{rasooli-tetrault-2015,
-    author    = {Mohammad Sadegh Rasooli and Joel R. Tetreault},
-    title     = {Yara Parser: {A} Fast and Accurate Dependency Parser},
-    journal   = {Computing Research Repository},
-    volume    = {arXiv:1503.06733},
-    year      = {2015},
-    url       = {http://arxiv.org/abs/1503.06733},
-    note    = {version 2}
+@inproceedings{aly-etal-2021-fact,
+    title = "The Fact Extraction and {VER}ification Over Unstructured and Structured information ({FEVEROUS}) Shared Task",
+    author = "Aly, Rami  and
+      Guo, Zhijiang  and
+      Schlichtkrull, Michael Sejr  and
+      Thorne, James  and
+      Vlachos, Andreas  and
+      Christodoulopoulos, Christos  and
+      Cocarascu, Oana  and
+      Mittal, Arpit",
+    editor = "Aly, Rami  and
+      Christodoulopoulos, Christos  and
+      Cocarascu, Oana  and
+      Guo, Zhijiang  and
+      Mittal, Arpit  and
+      Schlichtkrull, Michael  and
+      Thorne, James  and
+      Vlachos, Andreas",
+    booktitle = "Proceedings of the Fourth Workshop on Fact Extraction and VERification (FEVER)",
+    month = nov,
+    year = "2021",
+    address = "Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.fever-1.1",
+    doi = "10.18653/v1/2021.fever-1.1",
+    pages = "1--13",
+    abstract = "The Fact Extraction and VERification Over Unstructured and Structured information (FEVEROUS) shared task, asks participating systems to determine whether human-authored claims are Supported or Refuted based on evidence retrieved from Wikipedia (or NotEnoughInfo if the claim cannot be verified). Compared to the FEVER 2018 shared task, the main challenge is the addition of structured data (tables and lists) as a source of evidence. The claims in the FEVEROUS dataset can be verified using only structured evidence, only unstructured evidence, or a mixture of both. Submissions are evaluated using the FEVEROUS score that combines label accuracy and evidence retrieval. Unlike FEVER 2018, FEVEROUS requires partial evidence to be returned for NotEnoughInfo claims, and the claims are longer and thus more complex. The shared task received 13 entries, six of which were able to beat the baseline system. The winning team was {``}Bust a move!{''}, achieving a FEVEROUS score of 27{\%} (+9{\%} compared to the baseline). In this paper we describe the shared task, present the full results and highlight commonalities and innovations among the participating systems.",
 }
 
 @article{Ando2005,
@@ -69,23 +88,163 @@
 	Year = {2005}
 }
 
-
-@article{dong2022table,
-  title={Table pre-training: A survey on model architectures, pre-training objectives, and downstream tasks},
-  author={Dong, Haoyu and Cheng, Zhoujun and He, Xinyi and Zhou, Mengyu and Zhou, Anda and Zhou, Fan and Liu, Ao and Han, Shi and Zhang, Dongmei},
-  journal={arXiv preprint arXiv:2201.09745},
-  year={2022}
+@inproceedings{andrew2007scalable,
+  title={Scalable training of {L1}-regularized log-linear models},
+  author={Andrew, Galen and Gao, Jianfeng},
+  booktitle={Proceedings of the 24th International Conference on Machine Learning},
+  pages={33--40},
+  year={2007},
 }
 
+@book{APA:83,
+    author  = {{American Psychological Association}},
+    title   = {Publications Manual},
+    year    = "1983",
+    publisher = {American Psychological Association},
+    address = {Washington, DC}
+}
 
-@inproceedings{yang-etal-2022-tableformer,
-    title = "{T}able{F}ormer: Robust Transformer Modeling for Table-Text Encoding",
-    author = "Yang, Jingfeng  and
-      Gupta, Aditya  and
-      Upadhyay, Shyam  and
-      He, Luheng  and
-      Goel, Rahul  and
-      Paul, Shachi",
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+@article{cafarella2008webtables,
+  title={Webtables: exploring the power of tables on the web},
+  author={Cafarella, Michael J and Halevy, Alon and Wang, Daisy Zhe and Wu, Eugene and Zhang, Yang},
+  journal={Proceedings of the VLDB Endowment},
+  volume={1},
+  number={1},
+  pages={538--549},
+  year={2008},
+  publisher={VLDB Endowment}
+}
+
+@article{Chandra:81,
+	author = {Ashok K. Chandra and Dexter C. Kozen and Larry J. Stockmeyer},
+	year = "1981",
+	title = {Alternation},
+	journal = {Journal of the Association for Computing Machinery},
+	volume = "28",
+	number = "1",
+	pages = "114--133",
+	doi = "10.1145/322234.322243",
+}
+
+@article{chang2023prompt,
+  title={How to prompt llms for text-to-sql: A study in zero-shot, single-domain, and cross-domain settings},
+  author={Chang, Shuaichen and Fosler-Lussier, Eric},
+  journal={arXiv preprint arXiv:2305.11853},
+  year={2023}
+}
+
+@inproceedings{chen-etal-2000-mining,
+    title = "Mining Tables from Large Scale {HTML} Texts",
+    author = "Chen, Hsin-Hsi  and
+      Tsai, Shih-Chung  and
+      Tsai, Jin-He",
+    booktitle = "{COLING} 2000 Volume 1: The 18th International Conference on Computational Linguistics",
+    year = "2000",
+    url = "https://aclanthology.org/C00-1025",
+}
+
+@inproceedings{chen-etal-2020-hybridqa,
+    title = "{H}ybrid{QA}: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data",
+    author = "Chen, Wenhu  and
+      Zha, Hanwen  and
+      Chen, Zhiyu  and
+      Xiong, Wenhan  and
+      Wang, Hong  and
+      Wang, William Yang",
+    editor = "Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.findings-emnlp.91",
+    doi = "10.18653/v1/2020.findings-emnlp.91",
+    pages = "1026--1036",
+    abstract = "Existing question answering datasets focus on dealing with homogeneous information, based either only on text or KB/Table information alone. However, as human knowledge is distributed over heterogeneous forms, using homogeneous information alone might lead to severe coverage problems. To fill in the gap, we present HybridQA, a new large-scale question-answering dataset that requires reasoning on heterogeneous information. Each question is aligned with a Wikipedia table and multiple free-form corpora linked with the entities in the table. The questions are designed to aggregate both tabular information and text information, i.e., lack of either form would render the question unanswerable. We test with three different models: 1) a table-only model. 2) text-only model. 3) a hybrid model that combines heterogeneous information to find the answer. The experimental results show that the EM scores obtained by two baselines are below 20{\%}, while the hybrid model can achieve an EM over 40{\%}. This gap suggests the necessity to aggregate heterogeneous information in HybridQA. However, the hybrid model{'}s score is still far behind human performance. Hence, HybridQA can serve as a challenging benchmark to study question answering with heterogeneous information.",
+}
+
+@inproceedings{chen-etal-2021-finqa,
+    title = "{F}in{QA}: A Dataset of Numerical Reasoning over Financial Data",
+    author = "Chen, Zhiyu  and
+      Chen, Wenhu  and
+      Smiley, Charese  and
+      Shah, Sameena  and
+      Borova, Iana  and
+      Langdon, Dylan  and
+      Moussa, Reema  and
+      Beane, Matt  and
+      Huang, Ting-Hao  and
+      Routledge, Bryan  and
+      Wang, William Yang",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.300",
+    doi = "10.18653/v1/2021.emnlp-main.300",
+    pages = "3697--3711",
+    abstract = "The sheer volume of financial statements makes it difficult for humans to access and analyze a business{'}s financials. Robust numerical reasoning likewise faces unique challenges in this domain. In this work, we focus on answering deep questions over financial data, aiming to automate the analysis of a large corpus of financial documents. In contrast to existing tasks on general domain, the finance domain includes complex numerical reasoning and understanding of heterogeneous representations. To facilitate analytical progress, we propose a new large-scale dataset, FinQA, with Question-Answering pairs over Financial reports, written by financial experts. We also annotate the gold reasoning programs to ensure full explainability. We further introduce baselines and conduct comprehensive experiments in our dataset. The results demonstrate that popular, large, pre-trained models fall far short of expert humans in acquiring finance knowledge and in complex multi-step numerical reasoning on that knowledge. Our dataset {--} the first of its kind {--} should therefore enable significant, new community research into complex application domains. The dataset and code are publicly available at \url{https://github.com/czyssrs/FinQA}.",
+}
+
+@article{chen2020open,
+  title={Open question answering over tables and text},
+  author={Chen, Wenhu and Chang, Ming-Wei and Schlinger, Eva and Wang, William and Cohen, William W},
+  journal={arXiv preprint arXiv:2010.10439},
+  year={2020}
+}
+
+@inproceedings{
+Chen2020TabFact,
+title={TabFact: A Large-scale Dataset for Table-based Fact Verification},
+author={Wenhu Chen and Hongmin Wang and Jianshu Chen and Yunkai Zhang and Hong Wang and Shiyang Li and Xiyou Zhou and William Yang Wang},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=rkeJRhNYDH}
+}
+
+@article{chen2021finqa,
+  title={Finqa: A dataset of numerical reasoning over financial data},
+  author={Chen, Zhiyu and Chen, Wenhu and Smiley, Charese and Shah, Sameena and Borova, Iana and Langdon, Dylan and Moussa, Reema and Beane, Matt and Huang, Ting-Hao and Routledge, Bryan and others},
+  journal={arXiv preprint arXiv:2109.00122},
+  year={2021}
+}
+
+@inproceedings{
+chen2021open,
+title={Open Question Answering over Tables and Text},
+author={Wenhu Chen and Ming-Wei Chang and Eva Schlinger and William Yang Wang and William W. Cohen},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=MmCRswl1UYl}
+}
+
+@inproceedings{cheng-etal-2022-hitab,
+    title = "{H}i{T}ab: A Hierarchical Table Dataset for Question Answering and Natural Language Generation",
+    author = "Cheng, Zhoujun  and
+      Dong, Haoyu  and
+      Wang, Zhiruo  and
+      Jia, Ran  and
+      Guo, Jiaqi  and
+      Gao, Yan  and
+      Han, Shi  and
+      Lou, Jian-Guang  and
+      Zhang, Dongmei",
     editor = "Muresan, Smaranda  and
       Nakov, Preslav  and
       Villavicencio, Aline",
@@ -94,33 +253,266 @@
     year = "2022",
     address = "Dublin, Ireland",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.acl-long.40",
-    doi = "10.18653/v1/2022.acl-long.40",
-    pages = "528--537",
-    abstract = "Understanding tables is an important aspect of natural language understanding. Existing models for table understanding require linearization of the table structure, where row or column order is encoded as an unwanted bias. Such spurious biases make the model vulnerable to row and column order perturbations. Additionally, prior work has not thoroughly modeled the table structures or table-text alignments, hindering the table-text understanding ability. In this work, we propose a robust and structurally aware table-text encoding architecture TableFormer, where tabular structural biases are incorporated completely through learnable attention biases. TableFormer is (1) strictly invariant to row and column orders, and, (2) could understand tables better due to its tabular inductive biases. Our evaluations showed that TableFormer outperforms strong baselines in all settings on SQA, WTQ and TabFact table reasoning datasets, and achieves state-of-the-art performance on SQA, especially when facing answer-invariant row and column order perturbations (6{\%} improvement over the best baseline), because previous SOTA models{'} performance drops by 4{\%} - 6{\%} when facing such perturbations while TableFormer is not affected.",
+    url = "https://aclanthology.org/2022.acl-long.78",
+    doi = "10.18653/v1/2022.acl-long.78",
+    pages = "1094--1110",
+    abstract = "Tables are often created with hierarchies, but existing works on table reasoning mainly focus on flat tables and neglect hierarchical tables. Hierarchical tables challenge numerical reasoning by complex hierarchical indexing, as well as implicit relationships of calculation and semantics. We present a new dataset, HiTab, to study question answering (QA) and natural language generation (NLG) over hierarchical tables. HiTab is a cross-domain dataset constructed from a wealth of statistical reports and Wikipedia pages, and has unique characteristics: (1) nearly all tables are hierarchical, and (2) QA pairs are not proposed by annotators from scratch, but are revised from real and meaningful sentences authored by analysts. (3) to reveal complex numerical reasoning in statistical reports, we provide fine-grained annotations of quantity and entity alignment. Experiments suggest that this HiTab presents a strong challenge for existing baselines and a valuable benchmark for future research. Targeting hierarchical structure, we devise a hierarchy-aware logical form for symbolic reasoning over tables, which shows high effectiveness. Targeting table reasoning, we leverage entity and quantity alignment to explore partially supervised training in QA and conditional generation in NLG, and largely reduce spurious predictions in QA and produce better descriptions in NLG.",
 }
 
+@article{chung2024scaling,
+  title={Scaling instruction-finetuned language models},
+  author={Chung, Hyung Won and Hou, Le and Longpre, Shayne and Zoph, Barret and Tay, Yi and Fedus, William and Li, Yunxuan and Wang, Xuezhi and Dehghani, Mostafa and Brahma, Siddhartha and others},
+  journal={Journal of Machine Learning Research},
+  volume={25},
+  number={70},
+  pages={1--53},
+  year={2024}
+}
 
-@inproceedings{zhang-etal-2024-tablellama,
-    title = "{T}able{L}lama: Towards Open Large Generalist Models for Tables",
-    author = "Zhang, Tianshu  and
-      Yue, Xiang  and
-      Li, Yifei  and
-      Sun, Huan",
-    editor = "Duh, Kevin  and
-      Gomez, Helena  and
-      Bethard, Steven",
-    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
-    month = jun,
+@article{clark2018think,
+  title={Think you have solved question answering? try arc, the ai2 reasoning challenge},
+  author={Clark, Peter and Cowhey, Isaac and Etzioni, Oren and Khot, Tushar and Sabharwal, Ashish and Schoenick, Carissa and Tafjord, Oyvind},
+  journal={arXiv preprint arXiv:1803.05457},
+  year={2018}
+}
+
+@article{cobbe2021training,
+  title={Training verifiers to solve math word problems},
+  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and others},
+  journal={arXiv preprint arXiv:2110.14168},
+  year={2021}
+}
+
+@inproceedings{dahl-etal-1994-expanding,
+    title = "Expanding the Scope of the {ATIS} Task: The {ATIS}-3 Corpus",
+    author = "Dahl, Deborah A.  and
+      Bates, Madeleine  and
+      Brown, Michael  and
+      Fisher, William  and
+      Hunicke-Smith, Kate  and
+      Pallett, David  and
+      Pao, Christine  and
+      Rudnicky, Alexander  and
+      Shriberg, Elizabeth",
+    booktitle = "{H}uman {L}anguage {T}echnology: Proceedings of a Workshop held at {P}lainsboro, {N}ew {J}ersey, {M}arch 8-11, 1994",
+    year = "1994",
+    url = "https://aclanthology.org/H94-1010",
+}
+
+@inproceedings{dahl1994expanding,
+  title={Expanding the scope of the ATIS task: The ATIS-3 corpus},
+  author={Dahl, Deborah A and Bates, Madeleine and Brown, Michael K and Fisher, William M and Hunicke-Smith, Kate and Pallett, David S and Pao, Christine and Rudnicky, Alexander and Shriberg, Elizabeth},
+  booktitle={Human Language Technology: Proceedings of a Workshop held at Plainsboro, New Jersey, March 8-11, 1994},
+  year={1994}
+}
+
+@inproceedings{deng-etal-2022-recent,
+    title = "Recent Advances in Text-to-{SQL}: A Survey of What We Have and What We Expect",
+    author = "Deng, Naihao  and
+      Chen, Yulong  and
+      Zhang, Yue",
+    editor = "Calzolari, Nicoletta  and
+      Huang, Chu-Ren  and
+      Kim, Hansaem  and
+      Pustejovsky, James  and
+      Wanner, Leo  and
+      Choi, Key-Sun  and
+      Ryu, Pum-Mo  and
+      Chen, Hsin-Hsi  and
+      Donatelli, Lucia  and
+      Ji, Heng  and
+      Kurohashi, Sadao  and
+      Paggio, Patrizia  and
+      Xue, Nianwen  and
+      Kim, Seokhwan  and
+      Hahm, Younggyun  and
+      He, Zhong  and
+      Lee, Tony Kyungil  and
+      Santus, Enrico  and
+      Bond, Francis  and
+      Na, Seung-Hoon",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.190",
+    pages = "2166--2187",
+    abstract = "Text-to-SQL has attracted attention from both the natural language processing and database communities because of its ability to convert the semantics in natural language into SQL queries and its practical application in building natural language interfaces to database systems. The major challenges in text-to-SQL lie in encoding the meaning of natural utterances, decoding to SQL queries, and translating the semantics between these two forms. These challenges have been addressed to different extents by the recent advances. However, there is still a lack of comprehensive surveys for this task. To this end, we review recent progress on text-to-SQL for datasets, methods, and evaluation and provide this systematic survey, addressing the aforementioned challenges and discussing potential future directions. We hope this survey can serve as quick access to existing work and motivate future research.",
+}
+
+@inproceedings{deng-etal-2024-tables,
+    title = "Tables as Texts or Images: Evaluating the Table Reasoning Ability of {LLM}s and {MLLM}s",
+    author = "Deng, Naihao  and
+      Sun, Zhenjie  and
+      He, Ruiqi  and
+      Sikka, Aman  and
+      Chen, Yulong  and
+      Ma, Lin  and
+      Zhang, Yue  and
+      Mihalcea, Rada",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
     year = "2024",
-    address = "Mexico City, Mexico",
+    address = "Bangkok, Thailand and virtual meeting",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.naacl-long.335",
-    doi = "10.18653/v1/2024.naacl-long.335",
-    pages = "6024--6044",
-    abstract = "Semi-structured tables are ubiquitous. There has been a variety of tasks that aim to automatically interpret, augment, and query tables. Current methods often require pretraining on tables or special model architecture design, are restricted to specific table types, or have simplifying assumptions about tables and tasks. This paper makes the first step towards developing open-source large language models (LLMs) as generalists for a diversity of table-based tasks. Towards that end, we construct TableInstruct, a new dataset with a variety of realistic tables and tasks, for instruction tuning and evaluating LLMs. We further develop the first open-source generalist model for tables, TableLlama, by fine-tuning Llama 2 (7B) with LongLoRA to address the long context challenge. We experiment under both in-domain setting and out-of-domain setting. On 7 out of 8 in-domain tasks, TableLlama achieves comparable or better performance than the SOTA for each task, despite the latter often has task-specific design. On 6 out-of-domain datasets, it achieves 5-44 absolute point gains compared with the base model, showing that training on TableInstruct enhances the model{'}s generalizability. We open-source our dataset and trained model to boost future work on developing open generalist models for tables.",
+    url = "https://aclanthology.org/2024.findings-acl.23",
+    doi = "10.18653/v1/2024.findings-acl.23",
+    pages = "407--426",
+    abstract = "Tables contrast with unstructured text data by its structure to organize the information.In this paper, we investigate the efficiency of various LLMs in interpreting tabular data through different prompting strategies and data formats. Our analysis extends across six benchmarks for table-related tasks such as question-answering and fact-checking. We pioneer in the assessment of LLMs{'} performance on image-based table representation. Specifically, we compare five text-based and three image-based table representations, revealing the influence of representation and prompting on LLM performance. We hope our study provides researchers insights into optimizing LLMs{'} application in table-related tasks.",
 }
 
+@article{deng2022turl,
+  title={Turl: Table understanding through representation learning},
+  author={Deng, Xiang and Sun, Huan and Lees, Alyssa and Wu, You and Yu, Cong},
+  journal={ACM SIGMOD Record},
+  volume={51},
+  number={1},
+  pages={33--40},
+  year={2022},
+  publisher={ACM New York, NY, USA}
+}
+
+@misc{
+deng2025rethinking,
+title={Rethinking Table Instruction Tuning},
+author={Naihao Deng and Rada Mihalcea},
+year={2025},
+url={https://openreview.net/forum?id=GLmqHCwbOJ}
+}
+
+@inproceedings{devlin-etal-2019-bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1423",
+    doi = "10.18653/v1/N19-1423",
+    pages = "4171--4186",
+    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+}
+
+@article{dong2022table,
+  title={Table pre-training: A survey on model architectures, pre-training objectives, and downstream tasks},
+  author={Dong, Haoyu and Cheng, Zhoujun and He, Xinyi and Zhou, Mengyu and Zhou, Anda and Zhou, Fan and Liu, Ao and Han, Shi and Zhang, Dongmei},
+  journal={arXiv preprint arXiv:2201.09745},
+  year={2022}
+}
+
+@article{dubey2024llama,
+  title={The llama 3 herd of models},
+  author={Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelten, Alan and Yang, Amy and Fan, Angela and others},
+  journal={arXiv preprint arXiv:2407.21783},
+  year={2024}
+}
+
+@article{eric2017key,
+  title={Key-value retrieval networks for task-oriented dialogue},
+  author={Eric, Mihail and Manning, Christopher D},
+  journal={arXiv preprint arXiv:1705.05414},
+  year={2017}
+}
+
+@article{gou2023critic,
+  title={Critic: Large language models can self-correct with tool-interactive critiquing},
+  author={Gou, Zhibin and Shao, Zhihong and Gong, Yeyun and Shen, Yelong and Yang, Yujiu and Duan, Nan and Chen, Weizhu},
+  journal={arXiv preprint arXiv:2305.11738},
+  year={2023}
+}
+
+@article{groeneveld2024olmo,
+  title={Olmo: Accelerating the science of language models},
+  author={Groeneveld, Dirk and Beltagy, Iz and Walsh, Pete and Bhagia, Akshita and Kinney, Rodney and Tafjord, Oyvind and Jha, Ananya Harsh and Ivison, Hamish and Magnusson, Ian and Wang, Yizhong and others},
+  journal={arXiv preprint arXiv:2402.00838},
+  year={2024}
+}
+
+@article{guo2025deepseek,
+  title={Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning},
+  author={Guo, Daya and Yang, Dejian and Zhang, Haowei and Song, Junxiao and Zhang, Ruoyu and Xu, Runxin and Zhu, Qihao and Ma, Shirong and Wang, Peiyi and Bi, Xiao and others},
+  journal={arXiv preprint arXiv:2501.12948},
+  year={2025}
+}
+
+@inproceedings{gupta-etal-2020-infotabs,
+    title = "{INFOTABS}: Inference on Tables as Semi-structured Data",
+    author = "Gupta, Vivek  and
+      Mehta, Maitrey  and
+      Nokhiz, Pegah  and
+      Srikumar, Vivek",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.210",
+    doi = "10.18653/v1/2020.acl-main.210",
+    pages = "2309--2324",
+    abstract = "In this paper, we observe that semi-structured tabulated text is ubiquitous; understanding them requires not only comprehending the meaning of text fragments, but also implicit relationships between them. We argue that such data can prove as a testing ground for understanding how we reason about information. To study this, we introduce a new dataset called INFOTABS, comprising of human-written textual hypotheses based on premises that are tables extracted from Wikipedia info-boxes. Our analysis shows that the semi-structured, multi-domain and heterogeneous nature of the premises admits complex, multi-faceted reasoning. Experiments reveal that, while human annotators agree on the relationships between a table-hypothesis pair, several standard modeling strategies are unsuccessful at the task, suggesting that reasoning about tables can pose a difficult modeling challenge.",
+}
+
+@book{Gusfield:97,
+    author  = {Dan Gusfield},
+    title   = {Algorithms on Strings, Trees and Sequences},
+    year    = "1997",
+    publisher = {Cambridge University Press},
+    address = {Cambridge, UK}
+}
+
+@book{hawkins2021thousand,
+  title={A thousand brains: a new theory of intelligence},
+  author={Hawkins, Jeff},
+  year={2021},
+  publisher={Basic Books}
+}
+
+@article{he2015sema,
+  title={Sema-join: joining semantically-related tables using big table corpora},
+  author={He, Yeye and Ganjam, Kris and Chu, Xu},
+  journal={Proceedings of the VLDB Endowment},
+  volume={8},
+  number={12},
+  pages={1358--1369},
+  year={2015},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{hemphill1990atis,
+  title={The ATIS spoken language systems pilot corpus},
+  author={Hemphill, Charles T and Godfrey, John J and Doddington, George R},
+  booktitle={Speech and Natural Language: Proceedings of a Workshop Held at Hidden Valley, Pennsylvania, June 24-27, 1990},
+  year={1990}
+}
+
+@article{hendrycks2020measuring,
+  title={Measuring massive multitask language understanding},
+  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Zou, Andy and Mazeika, Mantas and Song, Dawn and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:2009.03300},
+  year={2020}
+}
+
+@article{hendryckstest2021,
+  title={Measuring Massive Multitask Language Understanding},
+  author={Dan Hendrycks and Collin Burns and Steven Basart and Andy Zou and Mantas Mazeika and Dawn Song and Jacob Steinhardt},
+  journal={Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2021}
+}
 
 @inproceedings{herzig-etal-2020-tapas,
     title = "{T}a{P}as: Weakly Supervised Table Parsing via Pre-training",
@@ -144,60 +536,81 @@
     abstract = "Answering natural language questions over tables is usually seen as a semantic parsing task. To alleviate the collection cost of full logical forms, one popular approach focuses on weak supervision consisting of denotations instead of logical forms. However, training semantic parsers from weak supervision poses difficulties, and in addition, the generated logical forms are only used as an intermediate step prior to retrieving the denotation. In this paper, we present TaPas, an approach to question answering over tables without generating logical forms. TaPas trains from weak supervision, and predicts the denotation by selecting table cells and optionally applying a corresponding aggregation operator to such selection. TaPas extends BERT{'}s architecture to encode tables as input, initializes from an effective joint pre-training of text segments and tables crawled from Wikipedia, and is trained end-to-end. We experiment with three different semantic parsing datasets, and find that TaPas outperforms or rivals semantic parsing models by improving state-of-the-art accuracy on SQA from 55.1 to 67.2 and performing on par with the state-of-the-art on WikiSQL and WikiTQ, but with a simpler model architecture. We additionally find that transfer learning, which is trivial in our setting, from WikiSQL to WikiTQ, yields 48.7 accuracy, 4.2 points above the state-of-the-art.",
 }
 
-
-@inproceedings{yin-etal-2020-tabert,
-    title = "{T}a{BERT}: Pretraining for Joint Understanding of Textual and Tabular Data",
-    author = "Yin, Pengcheng  and
-      Neubig, Graham  and
-      Yih, Wen-tau  and
-      Riedel, Sebastian",
-    editor = "Jurafsky, Dan  and
-      Chai, Joyce  and
-      Schluter, Natalie  and
-      Tetreault, Joel",
-    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.acl-main.745",
-    doi = "10.18653/v1/2020.acl-main.745",
-    pages = "8413--8426",
-    abstract = "Recent years have witnessed the burgeoning of pretrained language models (LMs) for text-based natural language (NL) understanding tasks. Such models are typically trained on free-form NL text, hence may not be suitable for tasks like semantic parsing over structured data, which require reasoning over both free-form NL questions and structured tabular data (e.g., database tables). In this paper we present TaBERT, a pretrained LM that jointly learns representations for NL sentences and (semi-)structured tables. TaBERT is trained on a large corpus of 26 million tables and their English contexts. In experiments, neural semantic parsers using TaBERT as feature representation layers achieve new best results on the challenging weakly-supervised semantic parsing benchmark WikiTableQuestions, while performing competitively on the text-to-SQL dataset Spider.",
+@article{hewitt2024instruction,
+  title={Instruction Following without Instruction Tuning},
+  author={Hewitt, John and Liu, Nelson F and Liang, Percy and Manning, Christopher D},
+  journal={arXiv preprint arXiv:2409.14254},
+  year={2024}
 }
 
-
-
-
-
-
-@inproceedings{dahl-etal-1994-expanding,
-    title = "Expanding the Scope of the {ATIS} Task: The {ATIS}-3 Corpus",
-    author = "Dahl, Deborah A.  and
-      Bates, Madeleine  and
-      Brown, Michael  and
-      Fisher, William  and
-      Hunicke-Smith, Kate  and
-      Pallett, David  and
-      Pao, Christine  and
-      Rudnicky, Alexander  and
-      Shriberg, Elizabeth",
-    booktitle = "{H}uman {L}anguage {T}echnology: Proceedings of a Workshop held at {P}lainsboro, {N}ew {J}ersey, {M}arch 8-11, 1994",
-    year = "1994",
-    url = "https://aclanthology.org/H94-1010",
+@article{hu2021lora,
+  title={Lora: Low-rank adaptation of large language models},
+  author={Hu, Edward J and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  journal={arXiv preprint arXiv:2106.09685},
+  year={2021}
 }
 
+@article{hu2023llm,
+  title={Llm-adapters: An adapter family for parameter-efficient fine-tuning of large language models},
+  author={Hu, Zhiqiang and Wang, Lei and Lan, Yihuai and Xu, Wanyu and Lim, Ee-Peng and Bing, Lidong and Xu, Xing and Poria, Soujanya and Lee, Roy Ka-Wei},
+  journal={arXiv preprint arXiv:2304.01933},
+  year={2023}
+}
 
+@inproceedings{
+huben2024sparse,
+title={Sparse Autoencoders Find Highly Interpretable Features in Language Models},
+author={Robert Huben and Hoagy Cunningham and Logan Riggs Smith and Aidan Ewart and Lee Sharkey},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=F76bwRSLeK}
+}
 
-@inproceedings{zheng-etal-2024-multimodal,
-    title = "Multimodal Table Understanding",
-    author = "Zheng, Mingyu  and
-      Feng, Xinwei  and
-      Si, Qingyi  and
-      She, Qiaoqiao  and
-      Lin, Zheng  and
-      Jiang, Wenbin  and
-      Wang, Weiping",
+@article{hwang2019comprehensive,
+  title={A comprehensive exploration on wikisql with table-aware word contextualization},
+  author={Hwang, Wonseok and Yim, Jinyeong and Park, Seunghyun and Seo, Minjoon},
+  journal={arXiv preprint arXiv:1902.01069},
+  year={2019}
+}
+
+@article{israeli2007shapley,
+  title={A Shapley-based decomposition of the R-square of a linear regression},
+  author={Israeli, Osnat},
+  journal={The Journal of Economic Inequality},
+  volume={5},
+  pages={199--212},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{jauhar2016tabmcq,
+  title={Tabmcq: A dataset of general knowledge tables and multiple-choice questions},
+  author={Jauhar, Sujay Kumar and Turney, Peter and Hovy, Eduard},
+  journal={arXiv preprint arXiv:1602.03960},
+  year={2016}
+}
+
+@article{jiang2023mistral,
+  title={Mistral 7B},
+  author={Jiang, Albert Q and Sablayrolles, Alexandre and Mensch, Arthur and Bamford, Chris and Chaplot, Devendra Singh and Casas, Diego de las and Bressand, Florian and Lengyel, Gianna and Lample, Guillaume and Saulnier, Lucile and others},
+  journal={arXiv preprint arXiv:2310.06825},
+  year={2023}
+}
+
+@inproceedings{ke-etal-2024-critiquellm,
+    title = "{C}ritique{LLM}: Towards an Informative Critique Generation Model for Evaluation of Large Language Model Generation",
+    author = "Ke, Pei  and
+      Wen, Bosi  and
+      Feng, Andrew  and
+      Liu, Xiao  and
+      Lei, Xuanyu  and
+      Cheng, Jiale  and
+      Wang, Shengyuan  and
+      Zeng, Aohan  and
+      Dong, Yuxiao  and
+      Wang, Hongning  and
+      Tang, Jie  and
+      Huang, Minlie",
     editor = "Ku, Lun-Wei  and
       Martins, Andre  and
       Srikumar, Vivek",
@@ -206,32 +619,113 @@
     year = "2024",
     address = "Bangkok, Thailand",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.acl-long.493/",
-    doi = "10.18653/v1/2024.acl-long.493",
-    pages = "9102--9124",
-    abstract = "Although great progress has been made by previous table understanding methods including recent approaches based on large language models (LLMs), they rely heavily on the premise that given tables must be converted into a certain text sequence (such as Markdown or HTML) to serve as model input. However, it is difficult to access such high-quality textual table representations in some real-world scenarios, and table images are much more accessible. Therefore, how to directly understand tables using intuitive visual information is a crucial and urgent challenge for developing more practical applications. In this paper, we propose a new problem, multimodal table understanding, where the model needs to generate correct responses to various table-related requests based on the given table image. To facilitate both the model training and evaluation, we construct a large-scale dataset named MMTab, which covers a wide spectrum of table images, instructions and tasks. On this basis, we develop Table-LLaVA, a generalist tabular multimodal large language model (MLLM), which significantly outperforms recent open-source MLLM baselines on 23 benchmarks under held-in and held-out settings."
+    url = "https://aclanthology.org/2024.acl-long.704",
+    doi = "10.18653/v1/2024.acl-long.704",
+    pages = "13034--13054",
+    abstract = "Since the natural language processing (NLP) community started to make large language models (LLMs) act as a critic to evaluate the quality of generated texts, most of the existing works train a critique generation model on the evaluation data labeled by GPT-4{'}s direct prompting. We observe that these models lack the ability to generate informative critiques in both pointwise grading and pairwise comparison especially without references. As a result, their generated critiques cannot provide fine-grained distinguishability on generated texts, causing unsatisfactory evaluation performance. In this paper, we propose a simple yet effective method called Eval-Instruct, which can first acquire pointwise grading critiques with pseudo references and then revise these critiques via multi-path prompting to obtain informative evaluation data in different tasks and settings, including pointwise grading and pairwise comparison with / without references. After fine-tuning on these data, the resulting model CritiqueLLM is empirically shown to outperform ChatGPT and all the open-source baselines and even achieve comparable evaluation performance to GPT-4 in system-level correlations of pointwise grading. We also demonstrate that our generated critiques can act as scalable feedback to further improve the generation quality of strong LLMs like ChatGPT.",
 }
 
+@article{kobayashi2024revisiting,
+  title={Revisiting meta-evaluation for grammatical error correction},
+  author={Kobayashi, Masamune and Mita, Masato and Komachi, Mamoru},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={12},
+  pages={837--855},
+  year={2024},
+  publisher={MIT Press 255 Main Street, 9th Floor, Cambridge, Massachusetts 02142, USA~…}
+}
 
-@inproceedings{wiseman-etal-2017-challenges,
-    title = "Challenges in Data-to-Document Generation",
-    author = "Wiseman, Sam  and
-      Shieber, Stuart  and
-      Rush, Alexander",
-    editor = "Palmer, Martha  and
-      Hwa, Rebecca  and
-      Riedel, Sebastian",
-    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
-    month = sep,
-    year = "2017",
-    address = "Copenhagen, Denmark",
+@inproceedings{lebret-etal-2016-neural,
+    title = "Neural Text Generation from Structured Data with Application to the Biography Domain",
+    author = "Lebret, R{\'e}mi  and
+      Grangier, David  and
+      Auli, Michael",
+    editor = "Su, Jian  and
+      Duh, Kevin  and
+      Carreras, Xavier",
+    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2016",
+    address = "Austin, Texas",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/D17-1239",
-    doi = "10.18653/v1/D17-1239",
-    pages = "2253--2263",
-    abstract = "Recent neural models have shown significant progress on the problem of generating short descriptive texts conditioned on a small number of database records. In this work, we suggest a slightly more difficult data-to-text generation task, and investigate how effective current approaches are on this task. In particular, we introduce a new, large-scale corpus of data records paired with descriptive documents, propose a series of extractive evaluation methods for analyzing performance, and obtain baseline results using current neural generation methods. Experiments show that these models produce fluent text, but fail to convincingly approximate human-generated documents. Moreover, even templated baselines exceed the performance of these neural models on some metrics, though copy- and reconstruction-based extensions lead to noticeable improvements.",
+    url = "https://aclanthology.org/D16-1128",
+    doi = "10.18653/v1/D16-1128",
+    pages = "1203--1213",
 }
 
+@article{lester2021power,
+  title={The power of scale for parameter-efficient prompt tuning},
+  author={Lester, Brian and Al-Rfou, Rami and Constant, Noah},
+  journal={arXiv preprint arXiv:2104.08691},
+  year={2021}
+}
+
+@article{li2021prefix,
+  title={Prefix-tuning: Optimizing continuous prompts for generation},
+  author={Li, Xiang Lisa and Liang, Percy},
+  journal={arXiv preprint arXiv:2101.00190},
+  year={2021}
+}
+
+@article{li2023table,
+  title={Table-gpt: Table-tuned gpt for diverse table tasks},
+  author={Li, Peng and He, Yeye and Yashar, Dror and Cui, Weiwei and Ge, Song and Zhang, Haidong and Fainman, Danielle Rifinski and Zhang, Dongmei and Chaudhuri, Surajit},
+  journal={arXiv preprint arXiv:2310.09263},
+  year={2023}
+}
+
+@inproceedings{liu2018table,
+  title={Table-to-text generation by structure-aware seq2seq learning},
+  author={Liu, Tianyu and Wang, Kexiang and Sha, Lei and Chang, Baobao and Sui, Zhifang},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={32},
+  number={1},
+  year={2018}
+}
+
+@inproceedings{
+liu2022tapex,
+title={{TAPEX}: Table Pre-training via Learning a Neural {SQL} Executor},
+author={Qian Liu and Bei Chen and Jiaqi Guo and Morteza Ziyadi and Zeqi Lin and Weizhu Chen and Jian-Guang Lou},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=O50443AsCP}
+}
+
+@inproceedings{longlora,
+  author       = {Yukang Chen and Shengju Qian and Haotian Tang and Xin Lai and Zhijian Liu and Song Han and Jiaya Jia},
+  title        = {LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models},
+  booktitle    = {The International Conference on Learning Representations (ICLR)},
+  year         = {2024},
+}
+
+@article{lu2022dynamic,
+  title={Dynamic prompt learning via policy gradient for semi-structured mathematical reasoning},
+  author={Lu, Pan and Qiu, Liang and Chang, Kai-Wei and Wu, Ying Nian and Zhu, Song-Chun and Rajpurohit, Tanmay and Clark, Peter and Kalyan, Ashwin},
+  journal={arXiv preprint arXiv:2209.14610},
+  year={2022}
+}
+
+@article{luo2023empirical,
+  title={An empirical study of catastrophic forgetting in large language models during continual fine-tuning},
+  author={Luo, Yun and Yang, Zhen and Meng, Fandong and Li, Yafu and Zhou, Jie and Zhang, Yue},
+  journal={arXiv preprint arXiv:2308.08747},
+  year={2023}
+}
+
+@inproceedings{moosavi2021scigen,
+  title={Scigen: a dataset for reasoning-aware text generation from scientific tables},
+  author={Moosavi, Nafise Sadat and R{\"u}ckl{\'e}, Andreas and Roth, Dan and Gurevych, Iryna},
+  booktitle={Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 2)},
+  year={2021}
+}
+
+@article{muennighoff2025s1,
+  title={s1: Simple test-time scaling},
+  author={Muennighoff, Niklas and Yang, Zitong and Shi, Weijia and Li, Xiang Lisa and Fei-Fei, Li and Hajishirzi, Hannaneh and Zettlemoyer, Luke and Liang, Percy and Cand{\`e}s, Emmanuel and Hashimoto, Tatsunori},
+  journal={arXiv preprint arXiv:2501.19393},
+  year={2025}
+}
 
 @article{nan-etal-2022-fetaqa,
     title = "{F}e{T}a{QA}: Free-form Table Question Answering",
@@ -266,6 +760,293 @@
     abstract = "Existing table question answering datasets contain abundant factual questions that primarily evaluate a QA system{'}s comprehension of query and tabular data. However, restricted by their short-form answers, these datasets fail to include question{--}answer interactions that represent more advanced and naturally occurring information needs: questions that ask for reasoning and integration of information pieces retrieved from a structured knowledge source. To complement the existing datasets and to reveal the challenging nature of the table-based question answering task, we introduce FeTaQA, a new dataset with 10K Wikipedia-based table, question, free-form answer, supporting table cells pairs. FeTaQA is collected from noteworthy descriptions of Wikipedia tables that contain information people tend to seek; generation of these descriptions requires advanced processing that humans perform on a daily basis: Understand the question and table, retrieve, integrate, infer, and conduct text planning and surface realization to generate an answer. We provide two benchmark methods for the proposed task: a pipeline method based on semantic parsing-based QA systems and an end-to-end method based on large pretrained text generation models, and show that FeTaQA poses a challenge for both methods.",
 }
 
+@inproceedings{
+neelakantan2017learning,
+title={Learning a Natural Language Interface with Neural Programmer},
+author={Arvind Neelakantan and Quoc V. Le and Martin Abadi and Andrew McCallum and Dario Amodei},
+booktitle={International Conference on Learning Representations},
+year={2017},
+url={https://openreview.net/forum?id=ry2YOrcge}
+}
+
+@article{ouyang2022training,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={27730--27744},
+  year={2022}
+}
+
+@inproceedings{parikh-etal-2020-totto,
+    title = "{ToTTo}: A Controlled Table-To-Text Generation Dataset",
+    author = "Parikh, Ankur  and
+      Wang, Xuezhi  and
+      Gehrmann, Sebastian  and
+      Faruqui, Manaal  and
+      Dhingra, Bhuwan  and
+      Yang, Diyi  and
+      Das, Dipanjan",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.89",
+    doi = "10.18653/v1/2020.emnlp-main.89",
+    pages = "1173--1186",
+    abstract = "We present ToTTo, an open-domain English table-to-text dataset with over 120,000 training examples that proposes a controlled generation task: given a Wikipedia table and a set of highlighted table cells, produce a one-sentence description. To obtain generated targets that are natural but also faithful to the source table, we introduce a dataset construction process where annotators directly revise existing candidate sentences from Wikipedia. We present systematic analyses of our dataset and annotation process as well as results achieved by several state-of-the-art baselines. While usually fluent, existing methods often hallucinate phrases that are not supported by the table, suggesting that this dataset can serve as a useful research benchmark for high-precision conditional text generation.",
+}
+
+@inproceedings{pasupat-liang-2015-compositional,
+    title = "Compositional Semantic Parsing on Semi-Structured Tables",
+    author = "Pasupat, Panupong  and
+      Liang, Percy",
+    editor = "Zong, Chengqing  and
+      Strube, Michael",
+    booktitle = "Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = jul,
+    year = "2015",
+    address = "Beijing, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P15-1142",
+    doi = "10.3115/v1/P15-1142",
+    pages = "1470--1480",
+}
+
+@inproceedings{popescu2003towards,
+  title={Towards a theory of natural language interfaces to databases},
+  author={Popescu, Ana-Maria and Etzioni, Oren and Kautz, Henry},
+  booktitle={Proceedings of the 8th international conference on Intelligent user interfaces},
+  pages={149--157},
+  year={2003}
+}
+
+@article{radford2019language,
+  title={Language models are unsupervised multitask learners},
+  author={Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
+  journal={OpenAI blog},
+  volume={1},
+  number={8},
+  pages={9},
+  year={2019}
+}
+
+@article{rasooli-tetrault-2015,
+    author    = {Mohammad Sadegh Rasooli and Joel R. Tetreault},
+    title     = {Yara Parser: {A} Fast and Accurate Dependency Parser},
+    journal   = {Computing Research Repository},
+    volume    = {arXiv:1503.06733},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1503.06733},
+    note    = {version 2}
+}
+
+@article{rein2023gpqa,
+  title={Gpqa: A graduate-level google-proof q\&a benchmark},
+  author={Rein, David and Hou, Betty Li and Stickland, Asa Cooper and Petty, Jackson and Pang, Richard Yuanzhe and Dirani, Julien and Michael, Julian and Bowman, Samuel R},
+  journal={arXiv preprint arXiv:2311.12022},
+  year={2023}
+}
+
+@article{reiter2005choosing,
+  title={Choosing words in computer-generated weather forecasts},
+  author={Reiter, Ehud and Sripada, Somayajulu and Hunter, Jim and Yu, Jin and Davy, Ian},
+  journal={Artificial Intelligence},
+  volume={167},
+  number={1-2},
+  pages={137--169},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@inproceedings{scholak-etal-2021-picard,
+    title = "{PICARD}: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models",
+    author = "Scholak, Torsten  and
+      Schucher, Nathan  and
+      Bahdanau, Dzmitry",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.779/",
+    doi = "10.18653/v1/2021.emnlp-main.779",
+    pages = "9895--9901",
+    abstract = "Large pre-trained language models for textual data have an unconstrained output space; at each decoding step, they can produce any of 10,000s of sub-word tokens. When fine-tuned to target constrained formal languages like SQL, these models often generate invalid code, rendering it unusable. We propose PICARD (code available at \url{https://github.com/ElementAI/picard}), a method for constraining auto-regressive decoders of language models through incremental parsing. PICARD helps to find valid output sequences by rejecting inadmissible tokens at each decoding step. On the challenging Spider and CoSQL text-to-SQL translation tasks, we show that PICARD transforms fine-tuned T5 models with passable performance into state-of-the-art solutions."
+}
+
+@article{shao2024deepseekmath,
+  title={Deepseekmath: Pushing the limits of mathematical reasoning in open language models},
+  author={Shao, Zhihong and Wang, Peiyi and Zhu, Qihao and Xu, Runxin and Song, Junxiao and Bi, Xiao and Zhang, Haowei and Zhang, Mingchuan and Li, YK and Wu, Yang and others},
+  journal={arXiv preprint arXiv:2402.03300},
+  year={2024}
+}
+
+@article{shapley1953value,
+  title={A value for n-person games},
+  author={Shapley, Lloyd S and others},
+  year={1953},
+  publisher={Princeton University Press Princeton}
+}
+
+@inproceedings{shi2021learning,
+  title={Learning contextual representations for semantic parsing with generation-augmented pre-training},
+  author={Shi, Peng and Ng, Patrick and Wang, Zhiguo and Zhu, Henghui and Li, Alexander Hanbo and Wang, Jun and dos Santos, Cicero Nogueira and Xiang, Bing},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={15},
+  pages={13806--13814},
+  year={2021}
+}
+
+@inproceedings{shokri2017membership,
+  title={Membership inference attacks against machine learning models},
+  author={Shokri, Reza and Stronati, Marco and Song, Congzheng and Shmatikov, Vitaly},
+  booktitle={2017 IEEE symposium on security and privacy (SP)},
+  pages={3--18},
+  year={2017},
+  organization={IEEE}
+}
+
+@inproceedings{shu-etal-2021-logic,
+    title = "Logic-Consistency Text Generation from Semantic Parses",
+    author = "Shu, Chang  and
+      Zhang, Yusen  and
+      Dong, Xiangyu  and
+      Shi, Peng  and
+      Yu, Tao  and
+      Zhang, Rui",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-acl.388",
+    doi = "10.18653/v1/2021.findings-acl.388",
+    pages = "4414--4426",
+}
+
+@article{srivastava2024assessing,
+  title={Assessing LLMs' Mathematical Reasoning in Financial Document Question Answering},
+  author={Srivastava, Pragya and Malik, Manuj and Ganu, Tanuja},
+  journal={arXiv preprint arXiv:2402.11194},
+  year={2024}
+}
+
+@article{su2024tablegpt2,
+  title={Tablegpt2: A large multimodal model with tabular data integration},
+  author={Su, Aofeng and Wang, Aowen and Ye, Chao and Zhou, Chen and Zhang, Ga and Zhu, Guangcheng and Wang, Haobo and Xu, Haokai and Chen, Hao and Li, Haoze and others},
+  journal={arXiv preprint arXiv:2411.02059},
+  year={2024}
+}
+
+@inproceedings{suhr-etal-2020-exploring,
+    title = "Exploring Unexplored Generalization Challenges for Cross-Database Semantic Parsing",
+    author = "Suhr, Alane  and
+      Chang, Ming-Wei  and
+      Shaw, Peter  and
+      Lee, Kenton",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.742/",
+    doi = "10.18653/v1/2020.acl-main.742",
+    pages = "8372--8388",
+    abstract = "We study the task of cross-database semantic parsing (XSP), where a system that maps natural language utterances to executable SQL queries is evaluated on databases unseen during training. Recently, several datasets, including Spider, were proposed to support development of XSP systems. We propose a challenging evaluation setup for cross-database semantic parsing, focusing on variation across database schemas and in-domain language use. We re-purpose eight semantic parsing datasets that have been well-studied in the setting where in-domain training data is available, and instead use them as additional evaluation data for XSP systems instead. We build a system that performs well on Spider, and find that it struggles to generalize to our re-purposed set. Our setup uncovers several generalization challenges for cross-database semantic parsing, demonstrating the need to use and develop diverse training and evaluation datasets."
+}
+
+@article{sun2025table,
+  title={Table as Thought: Exploring Structured Thoughts in LLM Reasoning},
+  author={Sun, Zhenjie and Deng, Naihao and Yu, Haofei and You, Jiaxuan},
+  journal={arXiv preprint arXiv:2501.02152},
+  year={2025}
+}
+
+@article{sutskever2014sequence,
+  title={Sequence to sequence learning with neural networks},
+  author={Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V},
+  journal={Advances in neural information processing systems},
+  volume={27},
+  year={2014}
+}
+
+@inproceedings{tengli-etal-2004-learning,
+    title = "Learning Table Extraction from Examples",
+    author = "Tengli, Ashwin  and
+      Yang, Yiming  and
+      Ma, Nian Li",
+    booktitle = "{COLING} 2004: Proceedings of the 20th International Conference on Computational Linguistics",
+    month = "aug 23{--}aug 27",
+    year = "2004",
+    address = "Geneva, Switzerland",
+    publisher = "COLING",
+    url = "https://aclanthology.org/C04-1142",
+    pages = "987--993",
+}
+
+@article{touvron2023llama,
+  title={Llama 2: Open foundation and fine-tuned chat models},
+  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
+  journal={arXiv preprint arXiv:2307.09288},
+  year={2023}
+}
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+@article{veuthey2025meqa,
+  title={MEQA: A Meta-Evaluation Framework for Question \& Answer LLM Benchmarks},
+  author={Veuthey, Jaime Raldua and Majid, Zainab Ali and Hariharan, Suhas and Haimes, Jacob},
+  journal={arXiv preprint arXiv:2504.14039},
+  year={2025}
+}
+
+@inproceedings{wang-etal-2020-rat,
+    title = "{RAT-SQL}: Relation-Aware Schema Encoding and Linking for Text-to-{SQL} Parsers",
+    author = "Wang, Bailin  and
+      Shin, Richard  and
+      Liu, Xiaodong  and
+      Polozov, Oleksandr  and
+      Richardson, Matthew",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.677/",
+    doi = "10.18653/v1/2020.acl-main.677",
+    pages = "7567--7578",
+    abstract = "When translating natural language questions into SQL queries to answer questions from a database, contemporary semantic parsing models struggle to generalize to unseen database schemas. The generalization challenge lies in (a) encoding the database relations in an accessible way for the semantic parser, and (b) modeling alignment between database columns and their mentions in a given query. We present a unified framework, based on the relation-aware self-attention mechanism, to address schema encoding, schema linking, and feature representation within a text-to-SQL encoder. On the challenging Spider dataset this framework boosts the exact match accuracy to 57.2{\%}, surpassing its best counterparts by 8.7{\%} absolute improvement. Further augmented with BERT, it achieves the new state-of-the-art performance of 65.6{\%} on the Spider leaderboard. In addition, we observe qualitative improvements in the model`s understanding of schema linking and alignment. Our implementation will be open-sourced at \url{https://github.com/Microsoft/rat-sql}."
+}
+
 @inproceedings{wang-etal-2023-self-instruct,
     title = "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
     author = "Wang, Yizhong  and
@@ -289,148 +1070,121 @@
     abstract = "Large {``}instruction-tuned{''} language models (i.e., finetuned to respond to instructions) have demonstrated a remarkable ability to generalize zero-shot to new tasks. Nevertheless, they depend heavily on human-written instruction data that is often limited in quantity, diversity, and creativity, therefore hindering the generality of the tuned model. We introduce Self-Instruct, a framework for improving the instruction-following capabilities of pretrained language models by bootstrapping off their own generations. Our pipeline generates instructions, input, and output samples from a language model, then filters invalid or similar ones before using them to finetune the original model. Applying our method to the vanilla GPT3, we demonstrate a 33{\%} absolute improvement over the original model on Super-NaturalInstructions, on par with the performance of InstructGPT-001, which was trained with private user data and human annotations. For further evaluation, we curate a set of expert-written instructions for novel tasks, and show through human evaluation that tuning GPT3 with Self-Instruct outperforms using existing public instruction datasets by a large margin, leaving only a 5{\%} absolute gap behind InstructGPT-001. Self-Instruct provides an almost annotation-free method for aligning pre-trained language models with instructions, and we release our large synthetic dataset to facilitate future studies on instruction tuning.",
 }
 
-
-@article{jiang2023mistral,
-  title={Mistral 7B},
-  author={Jiang, Albert Q and Sablayrolles, Alexandre and Mensch, Arthur and Bamford, Chris and Chaplot, Devendra Singh and Casas, Diego de las and Bressand, Florian and Lengyel, Gianna and Lample, Guillaume and Saulnier, Lucile and others},
-  journal={arXiv preprint arXiv:2310.06825},
+@article{wang2023far,
+  title={How far can camels go? exploring the state of instruction tuning on open resources},
+  author={Wang, Yizhong and Ivison, Hamish and Dasigi, Pradeep and Hessel, Jack and Khot, Tushar and Chandu, Khyathi and Wadden, David and MacMillan, Kelsey and Smith, Noah A and Beltagy, Iz and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={74764--74786},
   year={2023}
 }
 
-
-@inproceedings{cheng-etal-2022-hitab,
-    title = "{H}i{T}ab: A Hierarchical Table Dataset for Question Answering and Natural Language Generation",
-    author = "Cheng, Zhoujun  and
-      Dong, Haoyu  and
-      Wang, Zhiruo  and
-      Jia, Ran  and
-      Guo, Jiaqi  and
-      Gao, Yan  and
-      Han, Shi  and
-      Lou, Jian-Guang  and
-      Zhang, Dongmei",
-    editor = "Muresan, Smaranda  and
-      Nakov, Preslav  and
-      Villavicencio, Aline",
-    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    month = may,
-    year = "2022",
-    address = "Dublin, Ireland",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.acl-long.78",
-    doi = "10.18653/v1/2022.acl-long.78",
-    pages = "1094--1110",
-    abstract = "Tables are often created with hierarchies, but existing works on table reasoning mainly focus on flat tables and neglect hierarchical tables. Hierarchical tables challenge numerical reasoning by complex hierarchical indexing, as well as implicit relationships of calculation and semantics. We present a new dataset, HiTab, to study question answering (QA) and natural language generation (NLG) over hierarchical tables. HiTab is a cross-domain dataset constructed from a wealth of statistical reports and Wikipedia pages, and has unique characteristics: (1) nearly all tables are hierarchical, and (2) QA pairs are not proposed by annotators from scratch, but are revised from real and meaningful sentences authored by analysts. (3) to reveal complex numerical reasoning in statistical reports, we provide fine-grained annotations of quantity and entity alignment. Experiments suggest that this HiTab presents a strong challenge for existing baselines and a valuable benchmark for future research. Targeting hierarchical structure, we devise a hierarchy-aware logical form for symbolic reasoning over tables, which shows high effectiveness. Targeting table reasoning, we leverage entity and quantity alignment to explore partially supervised training in QA and conditional generation in NLG, and largely reduce spurious predictions in QA and produce better descriptions in NLG.",
+@inproceedings{
+wang2024chainoftable,
+title={Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding},
+author={Zilong Wang and Hao Zhang and Chun-Liang Li and Julian Martin Eisenschlos and Vincent Perot and Zifeng Wang and Lesly Miculicich and Yasuhisa Fujii and Jingbo Shang and Chen-Yu Lee and Tomas Pfister},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=4L0xnS4GQM}
 }
 
-
-@inproceedings{gupta-etal-2020-infotabs,
-    title = "{INFOTABS}: Inference on Tables as Semi-structured Data",
-    author = "Gupta, Vivek  and
-      Mehta, Maitrey  and
-      Nokhiz, Pegah  and
-      Srikumar, Vivek",
-    editor = "Jurafsky, Dan  and
-      Chai, Joyce  and
-      Schluter, Natalie  and
-      Tetreault, Joel",
-    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.acl-main.210",
-    doi = "10.18653/v1/2020.acl-main.210",
-    pages = "2309--2324",
-    abstract = "In this paper, we observe that semi-structured tabulated text is ubiquitous; understanding them requires not only comprehending the meaning of text fragments, but also implicit relationships between them. We argue that such data can prove as a testing ground for understanding how we reason about information. To study this, we introduce a new dataset called INFOTABS, comprising of human-written textual hypotheses based on premises that are tables extracted from Wikipedia info-boxes. Our analysis shows that the semi-structured, multi-domain and heterogeneous nature of the premises admits complex, multi-faceted reasoning. Experiments reveal that, while human annotators agree on the relationships between a table-hypothesis pair, several standard modeling strategies are unsuccessful at the task, suggesting that reasoning about tables can pose a difficult modeling challenge.",
+@misc{wang2024mmlupro,
+      title={MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark}, 
+      author={Yubo Wang and Xueguang Ma and Ge Zhang and Yuansheng Ni and Abhranil Chandra and Shiguang Guo and Weiming Ren and Aaran Arulraj and Xuan He and Ziyan Jiang and Tianle Li and Max Ku and Kai Wang and Alex Zhuang and Rongqi Fan and Xiang Yue and Wenhu Chen},
+      year={2024},
+      eprint={2406.01574},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 
-@article{lu2022dynamic,
-  title={Dynamic prompt learning via policy gradient for semi-structured mathematical reasoning},
-  author={Lu, Pan and Qiu, Liang and Chang, Kai-Wei and Wu, Ying Nian and Zhu, Song-Chun and Rajpurohit, Tanmay and Clark, Peter and Kalyan, Ashwin},
-  journal={arXiv preprint arXiv:2209.14610},
+@article{warren-pereira-1982-efficient,
+    title = "An Efficient Easily Adaptable System for Interpreting Natural Language Queries",
+    author = "Warren, David H.D.  and
+      Pereira, Fernando C.N.",
+    journal = "American Journal of Computational Linguistics",
+    volume = "8",
+    number = "3-4",
+    year = "1982",
+    url = "https://aclanthology.org/J82-3002/",
+    pages = "110--122"
+}
+
+@article{wei2022chain,
+  title={Chain-of-thought prompting elicits reasoning in large language models},
+  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={24824--24837},
   year={2022}
 }
 
-
-
-
-
-@inproceedings{moosavi2021scigen,
-  title={Scigen: a dataset for reasoning-aware text generation from scientific tables},
-  author={Moosavi, Nafise Sadat and R{\"u}ckl{\'e}, Andreas and Roth, Dan and Gurevych, Iryna},
-  booktitle={Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 2)},
-  year={2021}
+@article{wei2022emergent,
+  title={Emergent abilities of large language models},
+  author={Wei, Jason and Tay, Yi and Bommasani, Rishi and Raffel, Colin and Zoph, Barret and Borgeaud, Sebastian and Yogatama, Dani and Bosma, Maarten and Zhou, Denny and Metzler, Donald and others},
+  journal={arXiv preprint arXiv:2206.07682},
+  year={2022}
 }
 
-
-@article{touvron2023llama,
-  title={Llama 2: Open foundation and fine-tuned chat models},
-  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
-  journal={arXiv preprint arXiv:2307.09288},
-  year={2023}
+@article{wei2024jailbroken,
+  title={Jailbroken: How does llm safety training fail?},
+  author={Wei, Alexander and Haghtalab, Nika and Steinhardt, Jacob},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
 }
 
-
-@inproceedings{chen-etal-2000-mining,
-    title = "Mining Tables from Large Scale {HTML} Texts",
-    author = "Chen, Hsin-Hsi  and
-      Tsai, Shih-Chung  and
-      Tsai, Jin-He",
-    booktitle = "{COLING} 2000 Volume 1: The 18th International Conference on Computational Linguistics",
-    year = "2000",
-    url = "https://aclanthology.org/C00-1025",
-}
-
-@inproceedings{tengli-etal-2004-learning,
-    title = "Learning Table Extraction from Examples",
-    author = "Tengli, Ashwin  and
-      Yang, Yiming  and
-      Ma, Nian Li",
-    booktitle = "{COLING} 2004: Proceedings of the 20th International Conference on Computational Linguistics",
-    month = "aug 23{--}aug 27",
-    year = "2004",
-    address = "Geneva, Switzerland",
-    publisher = "COLING",
-    url = "https://aclanthology.org/C04-1142",
-    pages = "987--993",
-}
-
-@inproceedings{chen-etal-2021-finqa,
-    title = "{F}in{QA}: A Dataset of Numerical Reasoning over Financial Data",
-    author = "Chen, Zhiyu  and
-      Chen, Wenhu  and
-      Smiley, Charese  and
-      Shah, Sameena  and
-      Borova, Iana  and
-      Langdon, Dylan  and
-      Moussa, Reema  and
-      Beane, Matt  and
-      Huang, Ting-Hao  and
-      Routledge, Bryan  and
-      Wang, William Yang",
-    editor = "Moens, Marie-Francine  and
-      Huang, Xuanjing  and
-      Specia, Lucia  and
-      Yih, Scott Wen-tau",
-    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2021",
-    address = "Online and Punta Cana, Dominican Republic",
+@inproceedings{wiseman-etal-2017-challenges,
+    title = "Challenges in Data-to-Document Generation",
+    author = "Wiseman, Sam  and
+      Shieber, Stuart  and
+      Rush, Alexander",
+    editor = "Palmer, Martha  and
+      Hwa, Rebecca  and
+      Riedel, Sebastian",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.emnlp-main.300",
-    doi = "10.18653/v1/2021.emnlp-main.300",
-    pages = "3697--3711",
-    abstract = "The sheer volume of financial statements makes it difficult for humans to access and analyze a business{'}s financials. Robust numerical reasoning likewise faces unique challenges in this domain. In this work, we focus on answering deep questions over financial data, aiming to automate the analysis of a large corpus of financial documents. In contrast to existing tasks on general domain, the finance domain includes complex numerical reasoning and understanding of heterogeneous representations. To facilitate analytical progress, we propose a new large-scale dataset, FinQA, with Question-Answering pairs over Financial reports, written by financial experts. We also annotate the gold reasoning programs to ensure full explainability. We further introduce baselines and conduct comprehensive experiments in our dataset. The results demonstrate that popular, large, pre-trained models fall far short of expert humans in acquiring finance knowledge and in complex multi-step numerical reasoning on that knowledge. Our dataset {--} the first of its kind {--} should therefore enable significant, new community research into complex application domains. The dataset and code are publicly available at \url{https://github.com/czyssrs/FinQA}.",
+    url = "https://aclanthology.org/D17-1239",
+    doi = "10.18653/v1/D17-1239",
+    pages = "2253--2263",
+    abstract = "Recent neural models have shown significant progress on the problem of generating short descriptive texts conditioned on a small number of database records. In this work, we suggest a slightly more difficult data-to-text generation task, and investigate how effective current approaches are on this task. In particular, we introduce a new, large-scale corpus of data records paired with descriptive documents, propose a series of extractive evaluation methods for analyzing performance, and obtain baseline results using current neural generation methods. Experiments show that these models produce fluent text, but fail to convincingly approximate human-generated documents. Moreover, even templated baselines exceed the performance of these neural models on some metrics, though copy- and reconstruction-based extensions lead to noticeable improvements.",
 }
 
-@article{jauhar2016tabmcq,
-  title={Tabmcq: A dataset of general knowledge tables and multiple-choice questions},
-  author={Jauhar, Sujay Kumar and Turney, Peter and Hovy, Eduard},
-  journal={arXiv preprint arXiv:1602.03960},
-  year={2016}
+@article{woods1972lunar,
+  title={The lunar sciences natural language information system},
+  author={Woods, William},
+  journal={BBN report},
+  year={1972},
+  publisher={Bolt Beranek and Newman}
 }
 
+@inproceedings{
+wu2025mmqa,
+title={{MMQA}: Evaluating {LLM}s with Multi-Table Multi-Hop Complex Questions},
+author={Jian Wu and Linyi Yang and Dongyuan Li and Yuliang Ji and Manabu Okumura and Yue Zhang},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=GGlpykXDCa}
+}
+
+@article{wu2025table,
+  title={Table-r1: Region-based reinforcement learning for table understanding},
+  author={Wu, Zhenhe and Yang, Jian and Liu, Jiaheng and Wu, Xianjie and Pan, Changzai and Zhang, Jie and Zhao, Yu and Song, Shuangyong and Li, Yongxiang and Li, Zhoujun},
+  journal={arXiv preprint arXiv:2505.12415},
+  year={2025}
+}
+
+@inproceedings{wu2025tablebench,
+  title={Tablebench: A comprehensive and complex benchmark for table question answering},
+  author={Wu, Xianjie and Yang, Jian and Chai, Linzheng and Zhang, Ge and Liu, Jiaheng and Du, Xeron and Liang, Di and Shu, Daixin and Cheng, Xianfu and Sun, Tianzhen and others},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={24},
+  pages={25497--25506},
+  year={2025}
+}
 
 @inproceedings{xie-etal-2022-unifiedskg,
     title = "{U}nified{SKG}: Unifying and Multi-Tasking Structured Knowledge Grounding with Text-to-Text Language Models",
@@ -471,6 +1225,97 @@
     abstract = "Structured knowledge grounding (SKG) leverages structured knowledge to complete user requests, such as semantic parsing over databases and question answering over knowledge bases. Since the inputs and outputs of SKG tasks are heterogeneous, they have been studied separately by different communities, which limits systematic and compatible research on SKG. In this paper, we overcome this limitation by proposing the UnifiedSKG framework, which unifies 21 SKG tasks into a text-to-text format, aiming to promote systematic SKG research, instead of being exclusive to a single task, domain, or dataset. We use UnifiedSKG to benchmark T5 with different sizes and show that T5, with simple modifications when necessary, achieves state-of-the-art performance on almost all of the 21 tasks. We further demonstrate that multi-task prefix-tuning improves the performance on most tasks, largely improving the overall performance. UnifiedSKG also facilitates the investigation of zero-shot and few-shot learning, and we show that T0, GPT-3, and Codex struggle in zero-shot and few-shot learning for SKG. We also use UnifiedSKG to conduct a series of controlled experiments on structured knowledge encoding variants across SKG tasks. UnifiedSKG is easily extensible to more tasks, and it is open-sourced at https://github.com/hkunlp/unifiedskg.",
 }
 
+@article{xing2025mmtu,
+  title={Mmtu: A massive multi-task table understanding and reasoning benchmark},
+  author={Xing, Junjie and He, Yeye and Zhou, Mengyu and Dong, Haoyu and Han, Shi and Chen, Lingjiao and Zhang, Dongmei and Chaudhuri, Surajit and Jagadish, HV},
+  journal={arXiv preprint arXiv:2506.05587},
+  year={2025}
+}
+
+@misc{
+xu2018sqlnet,
+title={{SQLN}et: Generating Structured Queries From Natural Language Without Reinforcement Learning},
+author={Xiaojun Xu and Chang Liu and Dawn Song},
+year={2018},
+url={https://openreview.net/forum?id=SkYibHlRb},
+}
+
+@inproceedings{yang-etal-2022-tableformer,
+    title = "{T}able{F}ormer: Robust Transformer Modeling for Table-Text Encoding",
+    author = "Yang, Jingfeng  and
+      Gupta, Aditya  and
+      Upadhyay, Shyam  and
+      He, Luheng  and
+      Goel, Rahul  and
+      Paul, Shachi",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.40",
+    doi = "10.18653/v1/2022.acl-long.40",
+    pages = "528--537",
+    abstract = "Understanding tables is an important aspect of natural language understanding. Existing models for table understanding require linearization of the table structure, where row or column order is encoded as an unwanted bias. Such spurious biases make the model vulnerable to row and column order perturbations. Additionally, prior work has not thoroughly modeled the table structures or table-text alignments, hindering the table-text understanding ability. In this work, we propose a robust and structurally aware table-text encoding architecture TableFormer, where tabular structural biases are incorporated completely through learnable attention biases. TableFormer is (1) strictly invariant to row and column orders, and, (2) could understand tables better due to its tabular inductive biases. Our evaluations showed that TableFormer outperforms strong baselines in all settings on SQA, WTQ and TabFact table reasoning datasets, and achieves state-of-the-art performance on SQA, especially when facing answer-invariant row and column order perturbations (6{\%} improvement over the best baseline), because previous SOTA models{'} performance drops by 4{\%} - 6{\%} when facing such perturbations while TableFormer is not affected.",
+}
+
+@article{yang2024qwen2,
+  title={Qwen2 technical report},
+  author={Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2407.10671},
+  year={2024}
+}
+
+@article{yang2025table,
+  title={Table-r1: Inference-time scaling for table reasoning},
+  author={Yang, Zheyuan and Chen, Lyuhao and Cohan, Arman and Zhao, Yilun},
+  journal={arXiv preprint arXiv:2505.23621},
+  year={2025}
+}
+
+@inproceedings{yin-etal-2016-neural,
+    title = "Neural Enquirer: Learning to Query Tables in Natural Language",
+    author = "Yin, Pengcheng  and
+      Lu, Zhengdong  and
+      Li, Hang  and
+      Ben, Kao",
+    editor = "Iyyer, Mohit  and
+      He, He  and
+      Boyd-Graber, Jordan  and
+      Daum{\'e} III, Hal",
+    booktitle = "Proceedings of the Workshop on Human-Computer Question Answering",
+    month = jun,
+    year = "2016",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W16-0105/",
+    doi = "10.18653/v1/W16-0105",
+    pages = "29--35"
+}
+
+@inproceedings{yin-etal-2020-tabert,
+    title = "{T}a{BERT}: Pretraining for Joint Understanding of Textual and Tabular Data",
+    author = "Yin, Pengcheng  and
+      Neubig, Graham  and
+      Yih, Wen-tau  and
+      Riedel, Sebastian",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.745",
+    doi = "10.18653/v1/2020.acl-main.745",
+    pages = "8413--8426",
+    abstract = "Recent years have witnessed the burgeoning of pretrained language models (LMs) for text-based natural language (NL) understanding tasks. Such models are typically trained on free-form NL text, hence may not be suitable for tasks like semantic parsing over structured data, which require reasoning over both free-form NL questions and structured tabular data (e.g., database tables). In this paper we present TaBERT, a pretrained LM that jointly learns representations for NL sentences and (semi-)structured tables. TaBERT is trained on a large corpus of 26 million tables and their English contexts. In experiments, neural semantic parsers using TaBERT as feature representation layers achieve new best results on the challenging weakly-supervised semantic parsing benchmark WikiTableQuestions, while performing competitively on the text-to-SQL dataset Spider.",
+}
 
 @inproceedings{yu-etal-2018-spider,
     title = "{S}pider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-{SQL} Task",
@@ -501,548 +1346,6 @@
     abstract = "We present \textit{Spider}, a large-scale complex and cross-domain semantic parsing and text-to-SQL dataset annotated by 11 college students. It consists of 10,181 questions and 5,693 unique complex SQL queries on 200 databases with multiple tables covering 138 different domains. We define a new complex and cross-domain semantic parsing and text-to-SQL task so that different complicated SQL queries and databases appear in train and test sets. In this way, the task requires the model to generalize well to both new SQL queries and new database schemas. Therefore, Spider is distinct from most of the previous semantic parsing tasks because they all use a single database and have the exact same program in the train set and the test set. We experiment with various state-of-the-art models and the best model achieves only 9.7{\%} exact matching accuracy on a database split setting. This shows that Spider presents a strong challenge for future research. Our dataset and task with the most recent updates are publicly available at \url{https://yale-lily.github.io/seq2sql/spider}.",
 }
 
-@inproceedings{shu-etal-2021-logic,
-    title = "Logic-Consistency Text Generation from Semantic Parses",
-    author = "Shu, Chang  and
-      Zhang, Yusen  and
-      Dong, Xiangyu  and
-      Shi, Peng  and
-      Yu, Tao  and
-      Zhang, Rui",
-    editor = "Zong, Chengqing  and
-      Xia, Fei  and
-      Li, Wenjie  and
-      Navigli, Roberto",
-    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
-    month = aug,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.findings-acl.388",
-    doi = "10.18653/v1/2021.findings-acl.388",
-    pages = "4414--4426",
-}
-
-
-@inproceedings{deng-etal-2022-recent,
-    title = "Recent Advances in Text-to-{SQL}: A Survey of What We Have and What We Expect",
-    author = "Deng, Naihao  and
-      Chen, Yulong  and
-      Zhang, Yue",
-    editor = "Calzolari, Nicoletta  and
-      Huang, Chu-Ren  and
-      Kim, Hansaem  and
-      Pustejovsky, James  and
-      Wanner, Leo  and
-      Choi, Key-Sun  and
-      Ryu, Pum-Mo  and
-      Chen, Hsin-Hsi  and
-      Donatelli, Lucia  and
-      Ji, Heng  and
-      Kurohashi, Sadao  and
-      Paggio, Patrizia  and
-      Xue, Nianwen  and
-      Kim, Seokhwan  and
-      Hahm, Younggyun  and
-      He, Zhong  and
-      Lee, Tony Kyungil  and
-      Santus, Enrico  and
-      Bond, Francis  and
-      Na, Seung-Hoon",
-    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
-    month = oct,
-    year = "2022",
-    address = "Gyeongju, Republic of Korea",
-    publisher = "International Committee on Computational Linguistics",
-    url = "https://aclanthology.org/2022.coling-1.190",
-    pages = "2166--2187",
-    abstract = "Text-to-SQL has attracted attention from both the natural language processing and database communities because of its ability to convert the semantics in natural language into SQL queries and its practical application in building natural language interfaces to database systems. The major challenges in text-to-SQL lie in encoding the meaning of natural utterances, decoding to SQL queries, and translating the semantics between these two forms. These challenges have been addressed to different extents by the recent advances. However, there is still a lack of comprehensive surveys for this task. To this end, we review recent progress on text-to-SQL for datasets, methods, and evaluation and provide this systematic survey, addressing the aforementioned challenges and discussing potential future directions. We hope this survey can serve as quick access to existing work and motivate future research.",
-}
-
-
-@article{sutskever2014sequence,
-  title={Sequence to sequence learning with neural networks},
-  author={Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V},
-  journal={Advances in neural information processing systems},
-  volume={27},
-  year={2014}
-}
-
-
-@inproceedings{lebret-etal-2016-neural,
-    title = "Neural Text Generation from Structured Data with Application to the Biography Domain",
-    author = "Lebret, R{\'e}mi  and
-      Grangier, David  and
-      Auli, Michael",
-    editor = "Su, Jian  and
-      Duh, Kevin  and
-      Carreras, Xavier",
-    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2016",
-    address = "Austin, Texas",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/D16-1128",
-    doi = "10.18653/v1/D16-1128",
-    pages = "1203--1213",
-}
-
-
-@inproceedings{liu2018table,
-  title={Table-to-text generation by structure-aware seq2seq learning},
-  author={Liu, Tianyu and Wang, Kexiang and Sha, Lei and Chang, Baobao and Sui, Zhifang},
-  booktitle={Proceedings of the AAAI conference on artificial intelligence},
-  volume={32},
-  number={1},
-  year={2018}
-}
-
-
-@article{vaswani2017attention,
-  title={Attention is all you need},
-  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
-  journal={Advances in neural information processing systems},
-  volume={30},
-  year={2017}
-}
-
-
-
-@inproceedings{devlin-etal-2019-bert,
-    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-    author = "Devlin, Jacob  and
-      Chang, Ming-Wei  and
-      Lee, Kenton  and
-      Toutanova, Kristina",
-    editor = "Burstein, Jill  and
-      Doran, Christy  and
-      Solorio, Thamar",
-    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
-    month = jun,
-    year = "2019",
-    address = "Minneapolis, Minnesota",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/N19-1423",
-    doi = "10.18653/v1/N19-1423",
-    pages = "4171--4186",
-    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
-}
-
-
-
-@article{chang2023prompt,
-  title={How to prompt llms for text-to-sql: A study in zero-shot, single-domain, and cross-domain settings},
-  author={Chang, Shuaichen and Fosler-Lussier, Eric},
-  journal={arXiv preprint arXiv:2305.11853},
-  year={2023}
-}
-
-
-@article{li2023table,
-  title={Table-gpt: Table-tuned gpt for diverse table tasks},
-  author={Li, Peng and He, Yeye and Yashar, Dror and Cui, Weiwei and Ge, Song and Zhang, Haidong and Fainman, Danielle Rifinski and Zhang, Dongmei and Chaudhuri, Surajit},
-  journal={arXiv preprint arXiv:2310.09263},
-  year={2023}
-}
-
-
-@article{zhang2024tablellm,
-  title={TableLLM: Enabling Tabular Data Manipulation by LLMs in Real Office Usage Scenarios},
-  author={Zhang, Xiaokang and Zhang, Jing and Ma, Zeyao and Li, Yang and Zhang, Bohan and Li, Guanlin and Yao, Zijun and Xu, Kangli and Zhou, Jinchang and Zhang-Li, Daniel and others},
-  journal={arXiv preprint arXiv:2403.19318},
-  year={2024}
-}
-
-
-@article{wei2022chain,
-  title={Chain-of-thought prompting elicits reasoning in large language models},
-  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
-  journal={Advances in neural information processing systems},
-  volume={35},
-  pages={24824--24837},
-  year={2022}
-}
-
-
-
-@article{gou2023critic,
-  title={Critic: Large language models can self-correct with tool-interactive critiquing},
-  author={Gou, Zhibin and Shao, Zhihong and Gong, Yeyun and Shen, Yelong and Yang, Yujiu and Duan, Nan and Chen, Weizhu},
-  journal={arXiv preprint arXiv:2305.11738},
-  year={2023}
-}
-
-@article{srivastava2024assessing,
-  title={Assessing LLMs' Mathematical Reasoning in Financial Document Question Answering},
-  author={Srivastava, Pragya and Malik, Manuj and Ganu, Tanuja},
-  journal={arXiv preprint arXiv:2402.11194},
-  year={2024}
-}enecccevcfdidkfjncihlffbvhgdvnfhufebdtlhtlie
-
-
-
-@inproceedings{wu2025tablebench,
-  title={Tablebench: A comprehensive and complex benchmark for table question answering},
-  author={Wu, Xianjie and Yang, Jian and Chai, Linzheng and Zhang, Ge and Liu, Jiaheng and Du, Xeron and Liang, Di and Shu, Daixin and Cheng, Xianfu and Sun, Tianzhen and others},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={39},
-  number={24},
-  pages={25497--25506},
-  year={2025}
-}
-
-@inproceedings{longlora,
-  author       = {Yukang Chen and Shengju Qian and Haotian Tang and Xin Lai and Zhijian Liu and Song Han and Jiaya Jia},
-  title        = {LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models},
-  booktitle    = {The International Conference on Learning Representations (ICLR)},
-  year         = {2024},
-}
-
-
-@article{ouyang2022training,
-  title={Training language models to follow instructions with human feedback},
-  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
-  journal={Advances in neural information processing systems},
-  volume={35},
-  pages={27730--27744},
-  year={2022}
-}
-
-
-@article{dubey2024llama,
-  title={The llama 3 herd of models},
-  author={Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelten, Alan and Yang, Amy and Fan, Angela and others},
-  journal={arXiv preprint arXiv:2407.21783},
-  year={2024}
-}
-
-
-@article{yang2024qwen2,
-  title={Qwen2 technical report},
-  author={Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
-  journal={arXiv preprint arXiv:2407.10671},
-  year={2024}
-}
-
-
-
-
-@article{zha2023tablegpt,
-  title={Tablegpt: Towards unifying tables, nature language and commands into one gpt},
-  author={Zha, Liangyu and Zhou, Junlin and Li, Liyao and Wang, Rui and Huang, Qingyi and Yang, Saisai and Yuan, Jing and Su, Changbao and Li, Xiang and Su, Aofeng and others},
-  journal={arXiv preprint arXiv:2307.08674},
-  year={2023}
-}
-
-
-@article{hu2021lora,
-  title={Lora: Low-rank adaptation of large language models},
-  author={Hu, Edward J and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
-  journal={arXiv preprint arXiv:2106.09685},
-  year={2021}
-}
-
-
-@article{hendrycks2020measuring,
-  title={Measuring massive multitask language understanding},
-  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Zou, Andy and Mazeika, Mantas and Song, Dawn and Steinhardt, Jacob},
-  journal={arXiv preprint arXiv:2009.03300},
-  year={2020}
-}
-
-
-@article{zhou2023instruction,
-  title={Instruction-following evaluation for large language models},
-  author={Zhou, Jeffrey and Lu, Tianjian and Mishra, Swaroop and Brahma, Siddhartha and Basu, Sujoy and Luan, Yi and Zhou, Denny and Hou, Le},
-  journal={arXiv preprint arXiv:2311.07911},
-  year={2023}
-}
-
-@article{cobbe2021training,
-  title={Training verifiers to solve math word problems},
-  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and others},
-  journal={arXiv preprint arXiv:2110.14168},
-  year={2021}
-}
-
-
-@article{eric2017key,
-  title={Key-value retrieval networks for task-oriented dialogue},
-  author={Eric, Mihail and Manning, Christopher D},
-  journal={arXiv preprint arXiv:1705.05414},
-  year={2017}
-}
-
-
-@inproceedings{parikh-etal-2020-totto,
-    title = "{ToTTo}: A Controlled Table-To-Text Generation Dataset",
-    author = "Parikh, Ankur  and
-      Wang, Xuezhi  and
-      Gehrmann, Sebastian  and
-      Faruqui, Manaal  and
-      Dhingra, Bhuwan  and
-      Yang, Diyi  and
-      Das, Dipanjan",
-    editor = "Webber, Bonnie  and
-      Cohn, Trevor  and
-      He, Yulan  and
-      Liu, Yang",
-    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-    month = nov,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.emnlp-main.89",
-    doi = "10.18653/v1/2020.emnlp-main.89",
-    pages = "1173--1186",
-    abstract = "We present ToTTo, an open-domain English table-to-text dataset with over 120,000 training examples that proposes a controlled generation task: given a Wikipedia table and a set of highlighted table cells, produce a one-sentence description. To obtain generated targets that are natural but also faithful to the source table, we introduce a dataset construction process where annotators directly revise existing candidate sentences from Wikipedia. We present systematic analyses of our dataset and annotation process as well as results achieved by several state-of-the-art baselines. While usually fluent, existing methods often hallucinate phrases that are not supported by the table, suggesting that this dataset can serve as a useful research benchmark for high-precision conditional text generation.",
-}
-
-
-
-@article{chen2020open,
-  title={Open question answering over tables and text},
-  author={Chen, Wenhu and Chang, Ming-Wei and Schlinger, Eva and Wang, William and Cohen, William W},
-  journal={arXiv preprint arXiv:2010.10439},
-  year={2020}
-}
-
-
-@inproceedings{ke-etal-2024-critiquellm,
-    title = "{C}ritique{LLM}: Towards an Informative Critique Generation Model for Evaluation of Large Language Model Generation",
-    author = "Ke, Pei  and
-      Wen, Bosi  and
-      Feng, Andrew  and
-      Liu, Xiao  and
-      Lei, Xuanyu  and
-      Cheng, Jiale  and
-      Wang, Shengyuan  and
-      Zeng, Aohan  and
-      Dong, Yuxiao  and
-      Wang, Hongning  and
-      Tang, Jie  and
-      Huang, Minlie",
-    editor = "Ku, Lun-Wei  and
-      Martins, Andre  and
-      Srikumar, Vivek",
-    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    month = aug,
-    year = "2024",
-    address = "Bangkok, Thailand",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.acl-long.704",
-    doi = "10.18653/v1/2024.acl-long.704",
-    pages = "13034--13054",
-    abstract = "Since the natural language processing (NLP) community started to make large language models (LLMs) act as a critic to evaluate the quality of generated texts, most of the existing works train a critique generation model on the evaluation data labeled by GPT-4{'}s direct prompting. We observe that these models lack the ability to generate informative critiques in both pointwise grading and pairwise comparison especially without references. As a result, their generated critiques cannot provide fine-grained distinguishability on generated texts, causing unsatisfactory evaluation performance. In this paper, we propose a simple yet effective method called Eval-Instruct, which can first acquire pointwise grading critiques with pseudo references and then revise these critiques via multi-path prompting to obtain informative evaluation data in different tasks and settings, including pointwise grading and pairwise comparison with / without references. After fine-tuning on these data, the resulting model CritiqueLLM is empirically shown to outperform ChatGPT and all the open-source baselines and even achieve comparable evaluation performance to GPT-4 in system-level correlations of pointwise grading. We also demonstrate that our generated critiques can act as scalable feedback to further improve the generation quality of strong LLMs like ChatGPT.",
-}
-
-
-@article{hendryckstest2021,
-  title={Measuring Massive Multitask Language Understanding},
-  author={Dan Hendrycks and Collin Burns and Steven Basart and Andy Zou and Mantas Mazeika and Dawn Song and Jacob Steinhardt},
-  journal={Proceedings of the International Conference on Learning Representations (ICLR)},
-  year={2021}
-}
-
-
-@misc{wang2024mmlupro,
-      title={MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark}, 
-      author={Yubo Wang and Xueguang Ma and Ge Zhang and Yuansheng Ni and Abhranil Chandra and Shiguang Guo and Weiming Ren and Aaran Arulraj and Xuan He and Ziyan Jiang and Tianle Li and Max Ku and Kai Wang and Alex Zhuang and Rongqi Fan and Xiang Yue and Wenhu Chen},
-      year={2024},
-      eprint={2406.01574},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-
-
-@article{clark2018think,
-  title={Think you have solved question answering? try arc, the ai2 reasoning challenge},
-  author={Clark, Peter and Cowhey, Isaac and Etzioni, Oren and Khot, Tushar and Sabharwal, Ashish and Schoenick, Carissa and Tafjord, Oyvind},
-  journal={arXiv preprint arXiv:1803.05457},
-  year={2018}
-}
-
-
-@article{rein2023gpqa,
-  title={Gpqa: A graduate-level google-proof q\&a benchmark},
-  author={Rein, David and Hou, Betty Li and Stickland, Asa Cooper and Petty, Jackson and Pang, Richard Yuanzhe and Dirani, Julien and Michael, Julian and Bowman, Samuel R},
-  journal={arXiv preprint arXiv:2311.12022},
-  year={2023}
-}
-
-
-@article{hewitt2024instruction,
-  title={Instruction Following without Instruction Tuning},
-  author={Hewitt, John and Liu, Nelson F and Liang, Percy and Manning, Christopher D},
-  journal={arXiv preprint arXiv:2409.14254},
-  year={2024}
-}
-
-
-@article{wang2023far,
-  title={How far can camels go? exploring the state of instruction tuning on open resources},
-  author={Wang, Yizhong and Ivison, Hamish and Dasigi, Pradeep and Hessel, Jack and Khot, Tushar and Chandu, Khyathi and Wadden, David and MacMillan, Kelsey and Smith, Noah A and Beltagy, Iz and others},
-  journal={Advances in Neural Information Processing Systems},
-  volume={36},
-  pages={74764--74786},
-  year={2023}
-}
-
-
-@article{chung2024scaling,
-  title={Scaling instruction-finetuned language models},
-  author={Chung, Hyung Won and Hou, Le and Longpre, Shayne and Zoph, Barret and Tay, Yi and Fedus, William and Li, Yunxuan and Wang, Xuezhi and Dehghani, Mostafa and Brahma, Siddhartha and others},
-  journal={Journal of Machine Learning Research},
-  volume={25},
-  number={70},
-  pages={1--53},
-  year={2024}
-}
-
-
-@article{wei2024jailbroken,
-  title={Jailbroken: How does llm safety training fail?},
-  author={Wei, Alexander and Haghtalab, Nika and Steinhardt, Jacob},
-  journal={Advances in Neural Information Processing Systems},
-  volume={36},
-  year={2024}
-}
-
-
-@article{zhou2024lima,
-  title={Lima: Less is more for alignment},
-  author={Zhou, Chunting and Liu, Pengfei and Xu, Puxin and Iyer, Srinivasan and Sun, Jiao and Mao, Yuning and Ma, Xuezhe and Efrat, Avia and Yu, Ping and Yu, Lili and others},
-  journal={Advances in Neural Information Processing Systems},
-  volume={36},
-  year={2024}
-}
-
-@article{groeneveld2024olmo,
-  title={Olmo: Accelerating the science of language models},
-  author={Groeneveld, Dirk and Beltagy, Iz and Walsh, Pete and Bhagia, Akshita and Kinney, Rodney and Tafjord, Oyvind and Jha, Ananya Harsh and Ivison, Hamish and Magnusson, Ian and Wang, Yizhong and others},
-  journal={arXiv preprint arXiv:2402.00838},
-  year={2024}
-}
-
-
-@article{abdin2024phi,
-  title={Phi-3 technical report: A highly capable language model locally on your phone},
-  author={Abdin, Marah and Aneja, Jyoti and Awadalla, Hany and Awadallah, Ahmed and Awan, Ammar Ahmad and Bach, Nguyen and Bahree, Amit and Bakhtiari, Arash and Bao, Jianmin and Behl, Harkirat and others},
-  journal={arXiv preprint arXiv:2404.14219},
-  year={2024}
-}
-
-@article{su2024tablegpt2,
-  title={Tablegpt2: A large multimodal model with tabular data integration},
-  author={Su, Aofeng and Wang, Aowen and Ye, Chao and Zhou, Chen and Zhang, Ga and Zhu, Guangcheng and Wang, Haobo and Xu, Haokai and Chen, Hao and Li, Haoze and others},
-  journal={arXiv preprint arXiv:2411.02059},
-  year={2024}
-}
-
-
-@inproceedings{hemphill1990atis,
-  title={The ATIS spoken language systems pilot corpus},
-  author={Hemphill, Charles T and Godfrey, John J and Doddington, George R},
-  booktitle={Speech and Natural Language: Proceedings of a Workshop Held at Hidden Valley, Pennsylvania, June 24-27, 1990},
-  year={1990}
-}
-
-
-@inproceedings{dahl1994expanding,
-  title={Expanding the scope of the ATIS task: The ATIS-3 corpus},
-  author={Dahl, Deborah A and Bates, Madeleine and Brown, Michael K and Fisher, William M and Hunicke-Smith, Kate and Pallett, David S and Pao, Christine and Rudnicky, Alexander and Shriberg, Elizabeth},
-  booktitle={Human Language Technology: Proceedings of a Workshop held at Plainsboro, New Jersey, March 8-11, 1994},
-  year={1994}
-}
-
-@article{woods1972lunar,
-  title={The lunar sciences natural language information system},
-  author={Woods, William},
-  journal={BBN report},
-  year={1972},
-  publisher={Bolt Beranek and Newman}
-}
-
-@article{warren-pereira-1982-efficient,
-    title = "An Efficient Easily Adaptable System for Interpreting Natural Language Queries",
-    author = "Warren, David H.D.  and
-      Pereira, Fernando C.N.",
-    journal = "American Journal of Computational Linguistics",
-    volume = "8",
-    number = "3-4",
-    year = "1982",
-    url = "https://aclanthology.org/J82-3002/",
-    pages = "110--122"
-}
-
-@inproceedings{popescu2003towards,
-  title={Towards a theory of natural language interfaces to databases},
-  author={Popescu, Ana-Maria and Etzioni, Oren and Kautz, Henry},
-  booktitle={Proceedings of the 8th international conference on Intelligent user interfaces},
-  pages={149--157},
-  year={2003}
-}
-
-@article{reiter2005choosing,
-  title={Choosing words in computer-generated weather forecasts},
-  author={Reiter, Ehud and Sripada, Somayajulu and Hunter, Jim and Yu, Jin and Davy, Ian},
-  journal={Artificial Intelligence},
-  volume={167},
-  number={1-2},
-  pages={137--169},
-  year={2005},
-  publisher={Elsevier}
-}
-
-
-@inproceedings{yin-etal-2016-neural,
-    title = "Neural Enquirer: Learning to Query Tables in Natural Language",
-    author = "Yin, Pengcheng  and
-      Lu, Zhengdong  and
-      Li, Hang  and
-      Ben, Kao",
-    editor = "Iyyer, Mohit  and
-      He, He  and
-      Boyd-Graber, Jordan  and
-      Daum{\'e} III, Hal",
-    booktitle = "Proceedings of the Workshop on Human-Computer Question Answering",
-    month = jun,
-    year = "2016",
-    address = "San Diego, California",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/W16-0105/",
-    doi = "10.18653/v1/W16-0105",
-    pages = "29--35"
-}
-
-
-@inproceedings{
-neelakantan2017learning,
-title={Learning a Natural Language Interface with Neural Programmer},
-author={Arvind Neelakantan and Quoc V. Le and Martin Abadi and Andrew McCallum and Dario Amodei},
-booktitle={International Conference on Learning Representations},
-year={2017},
-url={https://openreview.net/forum?id=ry2YOrcge}
-}
-
-
-@misc{
-zhong2018seqsql,
-title={Seq2{SQL}: Generating Structured Queries From Natural Language Using Reinforcement Learning },
-author={Victor Zhong and Caiming Xiong and Richard Socher},
-year={2018},
-url={https://openreview.net/forum?id=Syx6bz-Ab},
-}
-
-@misc{
-xu2018sqlnet,
-title={{SQLN}et: Generating Structured Queries From Natural Language Without Reinforcement Learning},
-author={Xiaojun Xu and Chang Liu and Dawn Song},
-year={2018},
-url={https://openreview.net/forum?id=SkYibHlRb},
-}
-
-
 @inproceedings{yu-etal-2018-typesql,
     title = "{T}ype{SQL}: Knowledge-Based Type-Aware Neural Text-to-{SQL} Generation",
     author = "Yu, Tao  and
@@ -1064,38 +1367,6 @@ url={https://openreview.net/forum?id=SkYibHlRb},
     abstract = "Interacting with relational databases through natural language helps users with any background easily query and analyze a vast amount of data. This requires a system that understands users' questions and converts them to SQL queries automatically. In this paper, we present a novel approach TypeSQL which formats the problem as a slot filling task in a more reasonable way. In addition, TypeSQL utilizes type information to better understand rare entities and numbers in the questions. We experiment this idea on the WikiSQL dataset and outperform the prior art by 6{\%} in much shorter time. We also show that accessing the content of databases can significantly improve the performance when users' queries are not well-formed. TypeSQL can reach 82.6{\%} accuracy, a 17.5{\%} absolute improvement compared to the previous content-sensitive model."
 }
 
-
-@article{hwang2019comprehensive,
-  title={A comprehensive exploration on wikisql with table-aware word contextualization},
-  author={Hwang, Wonseok and Yim, Jinyeong and Park, Seunghyun and Seo, Minjoon},
-  journal={arXiv preprint arXiv:1902.01069},
-  year={2019}
-}
-
-
-@inproceedings{wang-etal-2020-rat,
-    title = "{RAT-SQL}: Relation-Aware Schema Encoding and Linking for Text-to-{SQL} Parsers",
-    author = "Wang, Bailin  and
-      Shin, Richard  and
-      Liu, Xiaodong  and
-      Polozov, Oleksandr  and
-      Richardson, Matthew",
-    editor = "Jurafsky, Dan  and
-      Chai, Joyce  and
-      Schluter, Natalie  and
-      Tetreault, Joel",
-    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.acl-main.677/",
-    doi = "10.18653/v1/2020.acl-main.677",
-    pages = "7567--7578",
-    abstract = "When translating natural language questions into SQL queries to answer questions from a database, contemporary semantic parsing models struggle to generalize to unseen database schemas. The generalization challenge lies in (a) encoding the database relations in an accessible way for the semantic parser, and (b) modeling alignment between database columns and their mentions in a given query. We present a unified framework, based on the relation-aware self-attention mechanism, to address schema encoding, schema linking, and feature representation within a text-to-SQL encoder. On the challenging Spider dataset this framework boosts the exact match accuracy to 57.2{\%}, surpassing its best counterparts by 8.7{\%} absolute improvement. Further augmented with BERT, it achieves the new state-of-the-art performance of 65.6{\%} on the Spider leaderboard. In addition, we observe qualitative improvements in the model`s understanding of schema linking and alignment. Our implementation will be open-sourced at \url{https://github.com/Microsoft/rat-sql}."
-}
-
-
 @inproceedings{
 yu2021grappa,
 title={Gra{\{}PP{\}}a: Grammar-Augmented Pre-Training for Table Semantic Parsing},
@@ -1104,47 +1375,6 @@ booktitle={International Conference on Learning Representations},
 year={2021},
 url={https://openreview.net/forum?id=kyaIeYj4zZ}
 }
-
-@inproceedings{
-Chen2020TabFact,
-title={TabFact: A Large-scale Dataset for Table-based Fact Verification},
-author={Wenhu Chen and Hongmin Wang and Jianshu Chen and Yunkai Zhang and Hong Wang and Shiyang Li and Xiyou Zhou and William Yang Wang},
-booktitle={International Conference on Learning Representations},
-year={2020},
-url={https://openreview.net/forum?id=rkeJRhNYDH}
-}
-
-
-@inproceedings{scholak-etal-2021-picard,
-    title = "{PICARD}: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models",
-    author = "Scholak, Torsten  and
-      Schucher, Nathan  and
-      Bahdanau, Dzmitry",
-    editor = "Moens, Marie-Francine  and
-      Huang, Xuanjing  and
-      Specia, Lucia  and
-      Yih, Scott Wen-tau",
-    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2021",
-    address = "Online and Punta Cana, Dominican Republic",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.emnlp-main.779/",
-    doi = "10.18653/v1/2021.emnlp-main.779",
-    pages = "9895--9901",
-    abstract = "Large pre-trained language models for textual data have an unconstrained output space; at each decoding step, they can produce any of 10,000s of sub-word tokens. When fine-tuned to target constrained formal languages like SQL, these models often generate invalid code, rendering it unusable. We propose PICARD (code available at \url{https://github.com/ElementAI/picard}), a method for constraining auto-regressive decoders of language models through incremental parsing. PICARD helps to find valid output sequences by rejecting inadmissible tokens at each decoding step. On the challenging Spider and CoSQL text-to-SQL translation tasks, we show that PICARD transforms fine-tuned T5 models with passable performance into state-of-the-art solutions."
-}
-
-
-@inproceedings{
-liu2022tapex,
-title={{TAPEX}: Table Pre-training via Learning a Neural {SQL} Executor},
-author={Qian Liu and Bei Chen and Jiaqi Guo and Morteza Ziyadi and Zeqi Lin and Weizhu Chen and Jian-Guang Lou},
-booktitle={International Conference on Learning Representations},
-year={2022},
-url={https://openreview.net/forum?id=O50443AsCP}
-}
-
 
 @inproceedings{zellers-etal-2019-hellaswag,
     title = "{H}ella{S}wag: Can a Machine Really Finish Your Sentence?",
@@ -1167,75 +1397,94 @@ url={https://openreview.net/forum?id=O50443AsCP}
     abstract = "Recent work by Zellers et al. (2018) introduced a new task of commonsense natural language inference: given an event description such as {``}A woman sits at a piano,{''} a machine must select the most likely followup: {``}She sets her fingers on the keys.{''} With the introduction of BERT, near human-level performance was reached. Does this mean that machines can perform human level commonsense inference? In this paper, we show that commonsense inference still proves difficult for even state-of-the-art models, by presenting HellaSwag, a new challenge dataset. Though its questions are trivial for humans ({\textgreater}95{\%} accuracy), state-of-the-art models struggle ({\textless}48{\%}). We achieve this via Adversarial Filtering (AF), a data collection paradigm wherein a series of discriminators iteratively select an adversarial set of machine-generated wrong answers. AF proves to be surprisingly robust. The key insight is to scale up the length and complexity of the dataset examples towards a critical {`}Goldilocks{'} zone wherein generated text is ridiculous to humans, yet often misclassified by state-of-the-art models. Our construction of HellaSwag, and its resulting difficulty, sheds light on the inner workings of deep pretrained models. More broadly, it suggests a new path forward for NLP research, in which benchmarks co-evolve with the evolving state-of-the-art in an adversarial way, so as to present ever-harder challenges.",
 }
 
-
-@inproceedings{aly-etal-2021-fact,
-    title = "The Fact Extraction and {VER}ification Over Unstructured and Structured information ({FEVEROUS}) Shared Task",
-    author = "Aly, Rami  and
-      Guo, Zhijiang  and
-      Schlichtkrull, Michael Sejr  and
-      Thorne, James  and
-      Vlachos, Andreas  and
-      Christodoulopoulos, Christos  and
-      Cocarascu, Oana  and
-      Mittal, Arpit",
-    editor = "Aly, Rami  and
-      Christodoulopoulos, Christos  and
-      Cocarascu, Oana  and
-      Guo, Zhijiang  and
-      Mittal, Arpit  and
-      Schlichtkrull, Michael  and
-      Thorne, James  and
-      Vlachos, Andreas",
-    booktitle = "Proceedings of the Fourth Workshop on Fact Extraction and VERification (FEVER)",
-    month = nov,
-    year = "2021",
-    address = "Dominican Republic",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.fever-1.1",
-    doi = "10.18653/v1/2021.fever-1.1",
-    pages = "1--13",
-    abstract = "The Fact Extraction and VERification Over Unstructured and Structured information (FEVEROUS) shared task, asks participating systems to determine whether human-authored claims are Supported or Refuted based on evidence retrieved from Wikipedia (or NotEnoughInfo if the claim cannot be verified). Compared to the FEVER 2018 shared task, the main challenge is the addition of structured data (tables and lists) as a source of evidence. The claims in the FEVEROUS dataset can be verified using only structured evidence, only unstructured evidence, or a mixture of both. Submissions are evaluated using the FEVEROUS score that combines label accuracy and evidence retrieval. Unlike FEVER 2018, FEVEROUS requires partial evidence to be returned for NotEnoughInfo claims, and the claims are longer and thus more complex. The shared task received 13 entries, six of which were able to beat the baseline system. The winning team was {``}Bust a move!{''}, achieving a FEVEROUS score of 27{\%} (+9{\%} compared to the baseline). In this paper we describe the shared task, present the full results and highlight commonalities and innovations among the participating systems.",
+@article{zha2023tablegpt,
+  title={Tablegpt: Towards unifying tables, nature language and commands into one gpt},
+  author={Zha, Liangyu and Zhou, Junlin and Li, Liyao and Wang, Rui and Huang, Qingyi and Yang, Saisai and Yuan, Jing and Su, Changbao and Li, Xiang and Su, Aofeng and others},
+  journal={arXiv preprint arXiv:2307.08674},
+  year={2023}
 }
 
-@inproceedings{chen-etal-2020-hybridqa,
-    title = "{H}ybrid{QA}: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data",
-    author = "Chen, Wenhu  and
-      Zha, Hanwen  and
-      Chen, Zhiyu  and
-      Xiong, Wenhan  and
-      Wang, Hong  and
-      Wang, William Yang",
-    editor = "Cohn, Trevor  and
-      He, Yulan  and
-      Liu, Yang",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
-    month = nov,
-    year = "2020",
-    address = "Online",
+@inproceedings{zhang-etal-2024-tablellama,
+    title = "{T}able{L}lama: Towards Open Large Generalist Models for Tables",
+    author = "Zhang, Tianshu  and
+      Yue, Xiang  and
+      Li, Yifei  and
+      Sun, Huan",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.findings-emnlp.91",
-    doi = "10.18653/v1/2020.findings-emnlp.91",
-    pages = "1026--1036",
-    abstract = "Existing question answering datasets focus on dealing with homogeneous information, based either only on text or KB/Table information alone. However, as human knowledge is distributed over heterogeneous forms, using homogeneous information alone might lead to severe coverage problems. To fill in the gap, we present HybridQA, a new large-scale question-answering dataset that requires reasoning on heterogeneous information. Each question is aligned with a Wikipedia table and multiple free-form corpora linked with the entities in the table. The questions are designed to aggregate both tabular information and text information, i.e., lack of either form would render the question unanswerable. We test with three different models: 1) a table-only model. 2) text-only model. 3) a hybrid model that combines heterogeneous information to find the answer. The experimental results show that the EM scores obtained by two baselines are below 20{\%}, while the hybrid model can achieve an EM over 40{\%}. This gap suggests the necessity to aggregate heterogeneous information in HybridQA. However, the hybrid model{'}s score is still far behind human performance. Hence, HybridQA can serve as a challenging benchmark to study question answering with heterogeneous information.",
+    url = "https://aclanthology.org/2024.naacl-long.335",
+    doi = "10.18653/v1/2024.naacl-long.335",
+    pages = "6024--6044",
+    abstract = "Semi-structured tables are ubiquitous. There has been a variety of tasks that aim to automatically interpret, augment, and query tables. Current methods often require pretraining on tables or special model architecture design, are restricted to specific table types, or have simplifying assumptions about tables and tasks. This paper makes the first step towards developing open-source large language models (LLMs) as generalists for a diversity of table-based tasks. Towards that end, we construct TableInstruct, a new dataset with a variety of realistic tables and tasks, for instruction tuning and evaluating LLMs. We further develop the first open-source generalist model for tables, TableLlama, by fine-tuning Llama 2 (7B) with LongLoRA to address the long context challenge. We experiment under both in-domain setting and out-of-domain setting. On 7 out of 8 in-domain tasks, TableLlama achieves comparable or better performance than the SOTA for each task, despite the latter often has task-specific design. On 6 out-of-domain datasets, it achieves 5-44 absolute point gains compared with the base model, showing that training on TableInstruct enhances the model{'}s generalizability. We open-source our dataset and trained model to boost future work on developing open generalist models for tables.",
 }
 
-
-@inproceedings{pasupat-liang-2015-compositional,
-    title = "Compositional Semantic Parsing on Semi-Structured Tables",
-    author = "Pasupat, Panupong  and
-      Liang, Percy",
-    editor = "Zong, Chengqing  and
-      Strube, Michael",
-    booktitle = "Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
-    month = jul,
-    year = "2015",
-    address = "Beijing, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/P15-1142",
-    doi = "10.3115/v1/P15-1142",
-    pages = "1470--1480",
+@inproceedings{
+zhang2017understanding,
+title={Understanding deep learning requires rethinking generalization},
+author={Chiyuan Zhang and Samy Bengio and Moritz Hardt and Benjamin Recht and Oriol Vinyals},
+booktitle={International Conference on Learning Representations},
+year={2017},
+url={https://openreview.net/forum?id=Sy8gdB9xx}
 }
 
+@article{zhang2024tablellm,
+  title={TableLLM: Enabling Tabular Data Manipulation by LLMs in Real Office Usage Scenarios},
+  author={Zhang, Xiaokang and Zhang, Jing and Ma, Zeyao and Li, Yang and Zhang, Bohan and Li, Guanlin and Yao, Zijun and Xu, Kangli and Zhou, Jinchang and Zhang-Li, Daniel and others},
+  journal={arXiv preprint arXiv:2403.19318},
+  year={2024}
+}
+
+@inproceedings{zheng-etal-2024-multimodal,
+    title = "Multimodal Table Understanding",
+    author = "Zheng, Mingyu  and
+      Feng, Xinwei  and
+      Si, Qingyi  and
+      She, Qiaoqiao  and
+      Lin, Zheng  and
+      Jiang, Wenbin  and
+      Wang, Weiping",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.493/",
+    doi = "10.18653/v1/2024.acl-long.493",
+    pages = "9102--9124",
+    abstract = "Although great progress has been made by previous table understanding methods including recent approaches based on large language models (LLMs), they rely heavily on the premise that given tables must be converted into a certain text sequence (such as Markdown or HTML) to serve as model input. However, it is difficult to access such high-quality textual table representations in some real-world scenarios, and table images are much more accessible. Therefore, how to directly understand tables using intuitive visual information is a crucial and urgent challenge for developing more practical applications. In this paper, we propose a new problem, multimodal table understanding, where the model needs to generate correct responses to various table-related requests based on the given table image. To facilitate both the model training and evaluation, we construct a large-scale dataset named MMTab, which covers a wide spectrum of table images, instructions and tasks. On this basis, we develop Table-LLaVA, a generalist tabular multimodal large language model (MLLM), which significantly outperforms recent open-source MLLM baselines on 23 benchmarks under held-in and held-out settings."
+}
+
+@misc{
+zhong2018seqsql,
+title={Seq2{SQL}: Generating Structured Queries From Natural Language Using Reinforcement Learning },
+author={Victor Zhong and Caiming Xiong and Richard Socher},
+year={2018},
+url={https://openreview.net/forum?id=Syx6bz-Ab},
+}
+
+@article{zhou2023instruction,
+  title={Instruction-following evaluation for large language models},
+  author={Zhou, Jeffrey and Lu, Tianjian and Mishra, Swaroop and Brahma, Siddhartha and Basu, Sujoy and Luan, Yi and Zhou, Denny and Hou, Le},
+  journal={arXiv preprint arXiv:2311.07911},
+  year={2023}
+}
+
+@article{zhou2024lima,
+  title={Lima: Less is more for alignment},
+  author={Zhou, Chunting and Liu, Pengfei and Xu, Puxin and Iyer, Srinivasan and Sun, Jiao and Mao, Yuning and Ma, Xuezhe and Efrat, Avia and Yu, Ping and Yu, Lili and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
 
 @inproceedings{zhu-etal-2021-tat,
     title = "{TAT}-{QA}: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance",
@@ -1260,360 +1509,4 @@ url={https://openreview.net/forum?id=O50443AsCP}
     doi = "10.18653/v1/2021.acl-long.254",
     pages = "3277--3287",
     abstract = "Hybrid data combining both tabular and textual content (e.g., financial reports) are quite pervasive in the real world. However, Question Answering (QA) over such hybrid data is largely neglected in existing research. In this work, we extract samples from real financial reports to build a new large-scale QA dataset containing both Tabular And Textual data, named TAT-QA, where numerical reasoning is usually required to infer the answer, such as addition, subtraction, multiplication, division, counting, comparison/sorting, and the compositions. We further propose a novel QA model termed TAGOP, which is capable of reasoning over both tables and text. It adopts sequence tagging to extract relevant cells from the table along with relevant spans from the text to infer their semantics, and then applies symbolic reasoning over them with a set of aggregation operators to arrive at the final answer. TAGOP achieves 58.0{\%} inF1, which is an 11.1{\%} absolute increase over the previous best baseline model, according to our experiments on TAT-QA. But this result still lags far behind performance of expert human, i.e.90.8{\%} in F1. It is demonstrated that our TAT-QA is very challenging and can serve as a benchmark for training and testing powerful QA models that address hybrid form data.",
-}
-
-
-@inproceedings{deng-etal-2024-tables,
-    title = "Tables as Texts or Images: Evaluating the Table Reasoning Ability of {LLM}s and {MLLM}s",
-    author = "Deng, Naihao  and
-      Sun, Zhenjie  and
-      He, Ruiqi  and
-      Sikka, Aman  and
-      Chen, Yulong  and
-      Ma, Lin  and
-      Zhang, Yue  and
-      Mihalcea, Rada",
-    editor = "Ku, Lun-Wei  and
-      Martins, Andre  and
-      Srikumar, Vivek",
-    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
-    month = aug,
-    year = "2024",
-    address = "Bangkok, Thailand and virtual meeting",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.findings-acl.23",
-    doi = "10.18653/v1/2024.findings-acl.23",
-    pages = "407--426",
-    abstract = "Tables contrast with unstructured text data by its structure to organize the information.In this paper, we investigate the efficiency of various LLMs in interpreting tabular data through different prompting strategies and data formats. Our analysis extends across six benchmarks for table-related tasks such as question-answering and fact-checking. We pioneer in the assessment of LLMs{'} performance on image-based table representation. Specifically, we compare five text-based and three image-based table representations, revealing the influence of representation and prompting on LLM performance. We hope our study provides researchers insights into optimizing LLMs{'} application in table-related tasks.",
-}
-
-
-@inproceedings{akhtar-etal-2022-pubhealthtab,
-    title = "{P}ub{H}ealth{T}ab: {A} Public Health Table-based Dataset for Evidence-based Fact Checking",
-    author = "Akhtar, Mubashara  and
-      Cocarascu, Oana  and
-      Simperl, Elena",
-    editor = "Carpuat, Marine  and
-      de Marneffe, Marie-Catherine  and
-      Meza Ruiz, Ivan Vladimir",
-    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2022",
-    month = jul,
-    year = "2022",
-    address = "Seattle, United States",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.findings-naacl.1/",
-    doi = "10.18653/v1/2022.findings-naacl.1",
-    pages = "1--16",
-    abstract = "Inspired by human fact checkers, who use different types of evidence (e.g. tables, images, audio) in addition to text, several datasets with tabular evidence data have been released in recent years. Whilst the datasets encourage research on table fact-checking, they rely on information from restricted data sources, such as Wikipedia for creating claims and extracting evidence data, making the fact-checking process different from the real-world process used by fact checkers. In this paper, we introduce PubHealthTab, a table fact-checking dataset based on real world public health claims and noisy evidence tables from sources similar to those used by real fact checkers. We outline our approach for collecting evidence data from various websites and present an in-depth analysis of our dataset. Finally, we evaluate state-of-the-art table representation and pre-trained models fine-tuned on our dataset, achieving an overall $F_1$ score of 0.73."
-}
-
-@misc{
-deng2025rethinking,
-title={Rethinking Table Instruction Tuning},
-author={Naihao Deng and Rada Mihalcea},
-year={2025},
-url={https://openreview.net/forum?id=GLmqHCwbOJ}
-}
-
-
-@inproceedings{
-chen2021open,
-title={Open Question Answering over Tables and Text},
-author={Wenhu Chen and Ming-Wei Chang and Eva Schlinger and William Yang Wang and William W. Cohen},
-booktitle={International Conference on Learning Representations},
-year={2021},
-url={https://openreview.net/forum?id=MmCRswl1UYl}
-}
-
-@inproceedings{shi2021learning,
-  title={Learning contextual representations for semantic parsing with generation-augmented pre-training},
-  author={Shi, Peng and Ng, Patrick and Wang, Zhiguo and Zhu, Henghui and Li, Alexander Hanbo and Wang, Jun and dos Santos, Cicero Nogueira and Xiang, Bing},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={35},
-  number={15},
-  pages={13806--13814},
-  year={2021}
-}
-
-
-@inproceedings{suhr-etal-2020-exploring,
-    title = "Exploring Unexplored Generalization Challenges for Cross-Database Semantic Parsing",
-    author = "Suhr, Alane  and
-      Chang, Ming-Wei  and
-      Shaw, Peter  and
-      Lee, Kenton",
-    editor = "Jurafsky, Dan  and
-      Chai, Joyce  and
-      Schluter, Natalie  and
-      Tetreault, Joel",
-    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.acl-main.742/",
-    doi = "10.18653/v1/2020.acl-main.742",
-    pages = "8372--8388",
-    abstract = "We study the task of cross-database semantic parsing (XSP), where a system that maps natural language utterances to executable SQL queries is evaluated on databases unseen during training. Recently, several datasets, including Spider, were proposed to support development of XSP systems. We propose a challenging evaluation setup for cross-database semantic parsing, focusing on variation across database schemas and in-domain language use. We re-purpose eight semantic parsing datasets that have been well-studied in the setting where in-domain training data is available, and instead use them as additional evaluation data for XSP systems instead. We build a system that performs well on Spider, and find that it struggles to generalize to our re-purposed set. Our setup uncovers several generalization challenges for cross-database semantic parsing, demonstrating the need to use and develop diverse training and evaluation datasets."
-}
-
-
-@inproceedings{
-wu2025mmqa,
-title={{MMQA}: Evaluating {LLM}s with Multi-Table Multi-Hop Complex Questions},
-author={Jian Wu and Linyi Yang and Dongyuan Li and Yuliang Ji and Manabu Okumura and Yue Zhang},
-booktitle={The Thirteenth International Conference on Learning Representations},
-year={2025},
-url={https://openreview.net/forum?id=GGlpykXDCa}
-}
-
-
-
-
-@article{israeli2007shapley,
-  title={A Shapley-based decomposition of the R-square of a linear regression},
-  author={Israeli, Osnat},
-  journal={The Journal of Economic Inequality},
-  volume={5},
-  pages={199--212},
-  year={2007},
-  publisher={Springer}
-}
-
-
-@article{guo2025deepseek,
-  title={Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning},
-  author={Guo, Daya and Yang, Dejian and Zhang, Haowei and Song, Junxiao and Zhang, Ruoyu and Xu, Runxin and Zhu, Qihao and Ma, Shirong and Wang, Peiyi and Bi, Xiao and others},
-  journal={arXiv preprint arXiv:2501.12948},
-  year={2025}
-}
-
-
-@article{muennighoff2025s1,
-  title={s1: Simple test-time scaling},
-  author={Muennighoff, Niklas and Yang, Zitong and Shi, Weijia and Li, Xiang Lisa and Fei-Fei, Li and Hajishirzi, Hannaneh and Zettlemoyer, Luke and Liang, Percy and Cand{\`e}s, Emmanuel and Hashimoto, Tatsunori},
-  journal={arXiv preprint arXiv:2501.19393},
-  year={2025}
-}
-
-
-@article{shapley1953value,
-  title={A value for n-person games},
-  author={Shapley, Lloyd S and others},
-  year={1953},
-  publisher={Princeton University Press Princeton}
-}
-
-
-@article{luo2023empirical,
-  title={An empirical study of catastrophic forgetting in large language models during continual fine-tuning},
-  author={Luo, Yun and Yang, Zhen and Meng, Fandong and Li, Yafu and Zhou, Jie and Zhang, Yue},
-  journal={arXiv preprint arXiv:2308.08747},
-  year={2023}
-}
-
-@article{deng2022turl,
-  title={Turl: Table understanding through representation learning},
-  author={Deng, Xiang and Sun, Huan and Lees, Alyssa and Wu, You and Yu, Cong},
-  journal={ACM SIGMOD Record},
-  volume={51},
-  number={1},
-  pages={33--40},
-  year={2022},
-  publisher={ACM New York, NY, USA}
-}
-
-@inproceedings{
-zhang2017understanding,
-title={Understanding deep learning requires rethinking generalization},
-author={Chiyuan Zhang and Samy Bengio and Moritz Hardt and Benjamin Recht and Oriol Vinyals},
-booktitle={International Conference on Learning Representations},
-year={2017},
-url={https://openreview.net/forum?id=Sy8gdB9xx}
-}
-
-@article{radford2019language,
-  title={Language models are unsupervised multitask learners},
-  author={Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
-  journal={OpenAI blog},
-  volume={1},
-  number={8},
-  pages={9},
-  year={2019}
-}
-
-
-@article{brown2020language,
-  title={Language models are few-shot learners},
-  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
-  journal={Advances in neural information processing systems},
-  volume={33},
-  pages={1877--1901},
-  year={2020}
-}
-
-@inproceedings{
-huben2024sparse,
-title={Sparse Autoencoders Find Highly Interpretable Features in Language Models},
-author={Robert Huben and Hoagy Cunningham and Logan Riggs Smith and Aidan Ewart and Lee Sharkey},
-booktitle={The Twelfth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=F76bwRSLeK}
-}
-
-
-@inproceedings{shokri2017membership,
-  title={Membership inference attacks against machine learning models},
-  author={Shokri, Reza and Stronati, Marco and Song, Congzheng and Shmatikov, Vitaly},
-  booktitle={2017 IEEE symposium on security and privacy (SP)},
-  pages={3--18},
-  year={2017},
-  organization={IEEE}
-}
-
-
-@article{sun2025table,
-  title={Table as Thought: Exploring Structured Thoughts in LLM Reasoning},
-  author={Sun, Zhenjie and Deng, Naihao and Yu, Haofei and You, Jiaxuan},
-  journal={arXiv preprint arXiv:2501.02152},
-  year={2025}
-}
-
-@book{hawkins2021thousand,
-  title={A thousand brains: a new theory of intelligence},
-  author={Hawkins, Jeff},
-  year={2021},
-  publisher={Basic Books}
-}
-
-
-@article{veuthey2025meqa,
-  title={MEQA: A Meta-Evaluation Framework for Question \& Answer LLM Benchmarks},
-  author={Veuthey, Jaime Raldua and Majid, Zainab Ali and Hariharan, Suhas and Haimes, Jacob},
-  journal={arXiv preprint arXiv:2504.14039},
-  year={2025}
-}
-
-
-@article{kobayashi2024revisiting,
-  title={Revisiting meta-evaluation for grammatical error correction},
-  author={Kobayashi, Masamune and Mita, Masato and Komachi, Mamoru},
-  journal={Transactions of the Association for Computational Linguistics},
-  volume={12},
-  pages={837--855},
-  year={2024},
-  publisher={MIT Press 255 Main Street, 9th Floor, Cambridge, Massachusetts 02142, USA~…}
-}
-
-
-@inproceedings{
-wang2024chainoftable,
-title={Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding},
-author={Zilong Wang and Hao Zhang and Chun-Liang Li and Julian Martin Eisenschlos and Vincent Perot and Zifeng Wang and Lesly Miculicich and Yasuhisa Fujii and Jingbo Shang and Chen-Yu Lee and Tomas Pfister},
-booktitle={The Twelfth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=4L0xnS4GQM}
-}
-
-
-@article{wei2022emergent,
-  title={Emergent abilities of large language models},
-  author={Wei, Jason and Tay, Yi and Bommasani, Rishi and Raffel, Colin and Zoph, Barret and Borgeaud, Sebastian and Yogatama, Dani and Bosma, Maarten and Zhou, Denny and Metzler, Donald and others},
-  journal={arXiv preprint arXiv:2206.07682},
-  year={2022}
-}
-
-@article{yang2025table,
-  title={Table-r1: Inference-time scaling for table reasoning},
-  author={Yang, Zheyuan and Chen, Lyuhao and Cohan, Arman and Zhao, Yilun},
-  journal={arXiv preprint arXiv:2505.23621},
-  year={2025}
-}
-
-
-
-
-@article{shao2024deepseekmath,
-  title={Deepseekmath: Pushing the limits of mathematical reasoning in open language models},
-  author={Shao, Zhihong and Wang, Peiyi and Zhu, Qihao and Xu, Runxin and Song, Junxiao and Bi, Xiao and Zhang, Haowei and Zhang, Mingchuan and Li, YK and Wu, Yang and others},
-  journal={arXiv preprint arXiv:2402.03300},
-  year={2024}
-}
-
-
-@article{wu2025table,
-  title={Table-r1: Region-based reinforcement learning for table understanding},
-  author={Wu, Zhenhe and Yang, Jian and Liu, Jiaheng and Wu, Xianjie and Pan, Changzai and Zhang, Jie and Zhao, Yu and Song, Shuangyong and Li, Yongxiang and Li, Zhoujun},
-  journal={arXiv preprint arXiv:2505.12415},
-  year={2025}
-}
-
-
-@article{xing2025mmtu,
-  title={Mmtu: A massive multi-task table understanding and reasoning benchmark},
-  author={Xing, Junjie and He, Yeye and Zhou, Mengyu and Dong, Haoyu and Han, Shi and Chen, Lingjiao and Zhang, Dongmei and Chaudhuri, Surajit and Jagadish, HV},
-  journal={arXiv preprint arXiv:2506.05587},
-  year={2025}
-}
-
-
-@article{chen2021finqa,
-  title={Finqa: A dataset of numerical reasoning over financial data},
-  author={Chen, Zhiyu and Chen, Wenhu and Smiley, Charese and Shah, Sameena and Borova, Iana and Langdon, Dylan and Moussa, Reema and Beane, Matt and Huang, Ting-Hao and Routledge, Bryan and others},
-  journal={arXiv preprint arXiv:2109.00122},
-  year={2021}
-}
-
-@article{cafarella2008webtables,
-  title={Webtables: exploring the power of tables on the web},
-  author={Cafarella, Michael J and Halevy, Alon and Wang, Daisy Zhe and Wu, Eugene and Zhang, Yang},
-  journal={Proceedings of the VLDB Endowment},
-  volume={1},
-  number={1},
-  pages={538--549},
-  year={2008},
-  publisher={VLDB Endowment}
-}
-
-@article{he2015sema,
-  title={Sema-join: joining semantically-related tables using big table corpora},
-  author={He, Yeye and Ganjam, Kris and Chu, Xu},
-  journal={Proceedings of the VLDB Endowment},
-  volume={8},
-  number={12},
-  pages={1358--1369},
-  year={2015},
-  publisher={VLDB Endowment}
-}
-
-
-@inproceedings{abedjan2016dataxformer,
-  title={Dataxformer: A robust transformation discovery system},
-  author={Abedjan, Ziawasch and Morcos, John and Ilyas, Ihab F and Ouzzani, Mourad and Papotti, Paolo and Stonebraker, Michael},
-  booktitle={2016 IEEE 32nd International Conference on Data Engineering (ICDE)},
-  pages={1134--1145},
-  year={2016},
-  organization={IEEE}
-}
-
-@article{hu2023llm,
-  title={Llm-adapters: An adapter family for parameter-efficient fine-tuning of large language models},
-  author={Hu, Zhiqiang and Wang, Lei and Lan, Yihuai and Xu, Wanyu and Lim, Ee-Peng and Bing, Lidong and Xu, Xing and Poria, Soujanya and Lee, Roy Ka-Wei},
-  journal={arXiv preprint arXiv:2304.01933},
-  year={2023}
-}
-
-
-@article{lester2021power,
-  title={The power of scale for parameter-efficient prompt tuning},
-  author={Lester, Brian and Al-Rfou, Rami and Constant, Noah},
-  journal={arXiv preprint arXiv:2104.08691},
-  year={2021}
-}
-
-@article{li2021prefix,
-  title={Prefix-tuning: Optimizing continuous prompts for generation},
-  author={Li, Xiang Lisa and Liang, Percy},
-  journal={arXiv preprint arXiv:2101.00190},
-  year={2021}
 }
