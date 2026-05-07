@@ -1,0 +1,27 @@
+
+### model
+model_name_or_path: /code/table-sft/saves/olmo-finetune/experiment-12004-olmo-lr-5.0e-7-tablellm_train/checkpoint-13602
+
+### method
+stage: sft
+do_predict: true
+finetuning_type: full
+max_new_tokens: 4096
+
+### dataset
+dataset_dir: /code/table-sft/src/src/utils
+eval_dataset: hitab_test
+template: mistral
+cutoff_len: 2048
+max_samples: 92283
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+
+### output
+output_dir: /code/table-sft/saves/olmo-finetune/experiment-12004-olmo-lr-5.0e-7-tablellm_train/checkpoint-13602/evaluations/hitab_test
+overwrite_output_dir: true
+
+### eval
+per_device_eval_batch_size: 1
+predict_with_generate: true

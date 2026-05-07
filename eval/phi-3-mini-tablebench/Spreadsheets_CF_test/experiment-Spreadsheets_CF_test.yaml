@@ -1,0 +1,27 @@
+
+### model
+model_name_or_path: /code/table-sft/saves/phi-mini-finetune/experiment-12004-phi-lr-5.0e-7-tablebench_train/checkpoint-3318
+
+### method
+stage: sft
+do_predict: true
+finetuning_type: full
+max_new_tokens: 4096
+
+### dataset
+dataset_dir: /code/table-sft/src/src/utils
+eval_dataset: Spreadsheets_CF_test
+template: phi
+cutoff_len: 2048
+max_samples: 92283
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+
+### output
+output_dir: /code/table-sft/saves/phi-mini-finetune/experiment-12004-phi-lr-5.0e-7-tablebench_train/checkpoint-3318/evaluations/Spreadsheets_CF_test
+overwrite_output_dir: true
+
+### eval
+per_device_eval_batch_size: 1
+predict_with_generate: true

@@ -1,0 +1,18 @@
+### model
+model_name_or_path: /code/table-sft/saves/mistral-finetune/experiment-2118-mistral-lr-5.0e-7-tablegpt_large/checkpoint-5589
+
+### method
+finetuning_type: full
+
+### dataset
+task_dir: /code/LLaMA-Factory/evaluation/
+task: mmlu-pro_test  
+template: fewshot
+lang: mmlu-pro
+n_shot: 5
+
+### output
+save_dir: /code/table-sft/saves/mistral-finetune/experiment-2118-mistral-lr-5.0e-7-tablegpt_large/checkpoint-5589/evaluations/mmlu-pro
+
+### eval
+batch_size: 4
