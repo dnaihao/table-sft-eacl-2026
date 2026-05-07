@@ -1,5 +1,75 @@
 ---
 import Layout from "~/layouts/Layout.astro";
+import resultsRaw from "~/data/results.json";
+
+interface Row {
+  model: string;
+  base: string;
+  train: string;
+  benchmark: string;
+  metric: string;
+  value: number;
+}
+const results = resultsRaw as Row[];
+
+// Pivot for the table: per-(base,train) rows × benchmark columns
+const benchmarkOrder = [
+  "wikitq_test",
+  "fetaqa_test",
+  "tabfact_test",
+  "tabmwp_test",
+  "totto_test",
+  "infotabs_test",
+  "tatqa_test",
+  "hitab_test",
+  "tablebench_test",
+  "tablellm_wtq",
+  "tablellm_fetaqa",
+  "tablellm_tatqa",
+  "tablellm_ottqa",
+  "Beer_test",
+  "DeepM_test",
+  "Efthymiou_test",
+  "Spreadsheets_CF_test",
+  "Spreadsheets_DI_test",
+  "Spreadsheets_ED_Real_test",
+  "Spreadsheets_MVI_ColumnNoSep_test",
+  "instruction_following_test",
+];
+
+const baseOrder = ["mistral-v0.3", "olmo", "phi-3", "phi-3-mini"];
+const trainOrder = ["tablellama", "tablellm", "tablebench", "tablegpt", "tablegpt-small"];
+const baseDisplay: Record<string, string> = {
+  "mistral-v0.3": "Mistral-v0.3 (7B)",
+  olmo: "OLMo (7B)",
+  "phi-3": "Phi-3 (7B)",
+  "phi-3-mini": "Phi-3-mini (4B)",
+};
+const trainDisplay: Record<string, string> = {
+  tablellama: "TableLlama",
+  tablellm: "TableLLM",
+  tablebench: "TableBench",
+  tablegpt: "TableGPT",
+  "tablegpt-small": "TableGPT-small",
+};
+
+// Build a lookup table for fast cell access
+type Cell = { value: number; metric: string };
+const cells = new Map<string, Cell>();
+for (const r of results) {
+  cells.set(`${r.model}|${r.benchmark}`, { value: r.value, metric: r.metric });
+}
+
+// Combinations that have at least one result row
+const combos: Array<{ base: string; train: string; model: string }> = [];
+for (const base of baseOrder) {
+  for (const train of trainOrder) {
+    const model = `${base}-${train}`;
+    if (results.some((r) => r.model === model)) {
+      combos.push({ base, train, model });
+    }
+  }
+}
 
 const title = "What Really Matters for Table LLMs?";
 const subtitle = "A Meta-Evaluation of Model and Data Effects";
@@ -130,6 +200,140 @@ const bibtex = `@inproceedings{deng-etal-2026-really,
         <li class="flex gap-3"><span class="text-amber-600">▸</span><span>Finding: <strong>base model choice dominates</strong>; the training-corpus effect is smaller than commonly assumed.</span></li>
       </ul>
     </section>
+
+    <!-- Interactive results browser -->
+    <section class="mx-auto mt-16 max-w-6xl">
+      <h2 class="text-2xl font-bold text-stone-900">Results browser</h2>
+      <p class="mt-3 leading-relaxed text-stone-700">
+        Per-{`{base, training corpus, benchmark}`} headline metric. Toggle the
+        chips to focus on a subset of base models, training corpora, or benchmarks.
+        Cells are colour-scaled within each column (darker = higher).
+      </p>
+
+      <div class="mt-6 rounded-lg border border-stone-200 bg-white p-4 shadow-sm">
+        <!-- Filter chips -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-28 text-xs font-semibold uppercase tracking-wide text-stone-500">Base model</span>
+            <div class="flex flex-wrap gap-1.5" data-filter-group="base">
+              {baseOrder.map((b) => (
+                <button class="filter-chip" data-value={b}>{baseDisplay[b]}</button>
+              ))}
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-28 text-xs font-semibold uppercase tracking-wide text-stone-500">Train corpus</span>
+            <div class="flex flex-wrap gap-1.5" data-filter-group="train">
+              {trainOrder.map((t) => (
+                <button class="filter-chip" data-value={t}>{trainDisplay[t]}</button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="border-b border-stone-300 text-left text-xs uppercase tracking-wide text-stone-500">
+                <th class="sticky left-0 z-10 bg-white py-2 pr-4 align-bottom">Model</th>
+                {benchmarkOrder.map((b) => (
+                  <th class="py-2 px-2 text-center align-bottom font-medium" data-bench={b}>
+                    <span class="block max-w-[5.5rem] -rotate-0 break-words text-[11px] leading-tight text-stone-600">
+                      {b.replace(/_test$/, "").replace(/^tablellm_/, "TLLM·")}
+                    </span>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody id="results-tbody">
+              {combos.map(({ base, train, model }) => (
+                <tr class="border-b border-stone-100 hover:bg-amber-50/40" data-base={base} data-train={train}>
+                  <td class="sticky left-0 z-10 whitespace-nowrap bg-white py-1.5 pr-4 font-mono text-xs text-stone-700">
+                    {model}
+                  </td>
+                  {benchmarkOrder.map((b) => {
+                    const c = cells.get(`${model}|${b}`);
+                    if (!c) return <td class="px-1 py-1.5 text-center text-stone-300" data-bench={b}>—</td>;
+                    return (
+                      <td class="px-1 py-1.5 text-center text-xs tabular-nums" data-bench={b} data-value={c.value}>
+                        {c.value.toFixed(1)}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-xs text-stone-500">
+          {results.length.toLocaleString()} cells loaded. Headline metric per
+          benchmark is BLEU-4 for FeTaQA / ToTTo / TableLLM-FeTaQA, ROUGE-L
+          for the rest. See the paper for details.
+        </p>
+      </div>
+    </section>
+
+    <style>
+      .filter-chip {
+        @apply rounded-full border border-stone-300 bg-white px-2.5 py-0.5 text-xs text-stone-600 transition;
+      }
+      .filter-chip.is-on {
+        @apply border-amber-700 bg-amber-700 text-white;
+      }
+    </style>
+
+    <script>
+      // Filter UI: clicking a chip toggles whether that base/train value is
+      // visible. By default every chip is "on". Cells are colour-scaled
+      // per-benchmark on the visible rows.
+      document.addEventListener("DOMContentLoaded", () => {
+        const groups = document.querySelectorAll<HTMLDivElement>("[data-filter-group]");
+        groups.forEach((g) => {
+          g.querySelectorAll<HTMLButtonElement>("button.filter-chip").forEach((b) => {
+            b.classList.add("is-on");
+            b.addEventListener("click", () => {
+              b.classList.toggle("is-on");
+              applyFilters();
+            });
+          });
+        });
+
+        function applyFilters() {
+          const onBase = new Set<string>();
+          const onTrain = new Set<string>();
+          document.querySelectorAll<HTMLButtonElement>("[data-filter-group='base'] .is-on").forEach((b) => onBase.add(b.dataset.value!));
+          document.querySelectorAll<HTMLButtonElement>("[data-filter-group='train'] .is-on").forEach((b) => onTrain.add(b.dataset.value!));
+          const rows = document.querySelectorAll<HTMLTableRowElement>("#results-tbody tr");
+          rows.forEach((r) => {
+            const visible = onBase.has(r.dataset.base!) && onTrain.has(r.dataset.train!);
+            r.style.display = visible ? "" : "none";
+          });
+          colorScale();
+        }
+
+        function colorScale() {
+          const headers = document.querySelectorAll<HTMLTableCellElement>("thead th[data-bench]");
+          headers.forEach((h) => {
+            const bench = h.dataset.bench!;
+            const cells = Array.from(
+              document.querySelectorAll<HTMLTableCellElement>(`tbody tr:not([style*='display: none']) td[data-bench='${bench}'][data-value]`)
+            );
+            const values = cells.map((c) => parseFloat(c.dataset.value!));
+            const min = Math.min(...values);
+            const max = Math.max(...values);
+            cells.forEach((c) => {
+              const v = parseFloat(c.dataset.value!);
+              const t = max === min ? 0.5 : (v - min) / (max - min);
+              const alpha = 0.05 + 0.55 * t;
+              c.style.backgroundColor = `rgba(180, 83, 9, ${alpha.toFixed(3)})`;
+              c.style.color = t > 0.55 ? "rgb(28, 25, 23)" : "rgb(68, 64, 60)";
+            });
+          });
+        }
+
+        applyFilters();
+      });
+    </script>
 
     <!-- Headline result figure -->
     <section class="mx-auto mt-16 max-w-3xl">
