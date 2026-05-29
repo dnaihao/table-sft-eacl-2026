@@ -13,18 +13,19 @@ four existing training datasets, yielding 12 models, and evaluate them across
 disentangles the contributions of base model vs. training data and finds that
 **base model choice plays a more dominant role than the training data itself**.
 
-## Released artefacts
+## 📦 Released artefacts
 
 | | Location |
 |---|---|
-| Camera-ready PDF | [ACL Anthology](https://aclanthology.org/2026.findings-eacl.195/) |
-| LaTeX source | [`paper/`](paper/) |
-| Replicated models (12 paper + Qwen / Phi-3-mini extras) | [huggingface.co/collections/dnaihao/table-llms](https://huggingface.co/collections/dnaihao/table-llms) |
-| Eval scripts and parsed metrics | [`eval/`](eval/) |
-| Raw model outputs (`generated_predictions.jsonl`) | [`dnaihao/table-sft-eval-predictions`](https://huggingface.co/datasets/dnaihao/table-sft-eval-predictions) (HF dataset) |
-| Project page | [dnaihao.github.io/table-sft-eacl-2026](https://dnaihao.github.io/table-sft-eacl-2026/) |
+| 📄 Camera-ready PDF | [ACL Anthology](https://aclanthology.org/2026.findings-eacl.195/) |
+| 📝 LaTeX source | [`paper/`](paper/) |
+| 📚 Training corpora (TableLlama / TableLLM / TableBench / TableGPT, bundled) | [`dnaihao/Table-Instructs`](https://huggingface.co/datasets/dnaihao/Table-Instructs) (HF dataset) |
+| 🤗 Replicated models (12 paper + Qwen / Phi-3-mini extras) | [huggingface.co/collections/dnaihao/table-llms](https://huggingface.co/collections/dnaihao/table-llms) |
+| 📊 Eval scripts and parsed metrics | [`eval/`](eval/) |
+| 💾 Raw model outputs (`generated_predictions.jsonl`) | [`dnaihao/table-sft-eval-predictions`](https://huggingface.co/datasets/dnaihao/table-sft-eval-predictions) (HF dataset) |
+| 🌐 Project page | [dnaihao.github.io/table-sft-eacl-2026](https://dnaihao.github.io/table-sft-eacl-2026/) |
 
-## Layout
+## 🗂️ Layout
 
 ```
 .
@@ -34,7 +35,7 @@ disentangles the contributions of base model vs. training data and finds that
 └── LICENSE        MIT (code). Models follow their base-model licenses.
 ```
 
-## Citation
+## 📚 Citation
 
 ```bibtex
 @inproceedings{deng-etal-2026-really,
@@ -64,7 +65,7 @@ disentangles the contributions of base model vs. training data and finds that
 }
 ```
 
-## License
+## ⚖️ License
 
 The code in this repository is released under the [MIT License](LICENSE).
 Released model weights follow the licenses of their respective base models:
