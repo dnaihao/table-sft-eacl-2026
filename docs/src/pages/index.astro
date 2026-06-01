@@ -205,7 +205,7 @@ const bibtex = `@inproceedings{deng-etal-2026-really,
     <section class="mx-auto mt-16 max-w-6xl">
       <h2 class="text-2xl font-bold text-stone-900">📊 Results browser</h2>
       <p class="mt-3 leading-relaxed text-stone-700">
-        Per-{`{base, training corpus, benchmark}`} headline metric. Toggle the
+        Per-{`{base, training corpus, benchmark}`} metric. Toggle the
         chips to focus on a subset of base models, training corpora, or benchmarks.
         Cells are colour-scaled within each column (darker = higher).
       </p>
@@ -266,7 +266,7 @@ const bibtex = `@inproceedings{deng-etal-2026-really,
           </table>
         </div>
         <p class="mt-3 text-xs text-stone-500">
-          {results.length.toLocaleString()} cells loaded. Headline metric per
+          {results.length.toLocaleString()} cells loaded. Metric per
           benchmark is BLEU-4 for FeTaQA / ToTTo / TableLLM-FeTaQA, ROUGE-L
           for the rest. See the paper for details.
         </p>
@@ -335,9 +335,9 @@ const bibtex = `@inproceedings{deng-etal-2026-really,
       });
     </script>
 
-    <!-- Headline result figure -->
+    <!-- Result figure -->
     <section class="mx-auto mt-16 max-w-3xl">
-      <h2 class="text-2xl font-bold text-stone-900">🎯 Headline result: base model dominates</h2>
+      <h2 class="text-2xl font-bold text-stone-900">🎯 Result: base model dominates</h2>
       <p class="mt-3 leading-relaxed text-stone-700">
         Shapley R² decomposition over the 3×4 grid: across the 16 table benchmarks,
         choice of base model contributes substantially more variance than the
